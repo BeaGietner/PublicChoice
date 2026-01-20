@@ -9,7 +9,8 @@ This repository contains teaching materials for an undergraduate course in Publi
 - `Course Outline.pdf` – Course syllabus
 - `Guidance.pdf` – Assessment and coursework guidance
 - `Glossary.pdf` – Key terms and concepts
-- etc
+- Additional course materials as the term progresses
+
 
 ## Intended audience
 Students enrolled in the course and instructors looking for reference materials.
@@ -18,4 +19,7 @@ Students enrolled in the course and instructors looking for reference materials.
 This repository is primarily a backup and reference archive. Materials may be updated during the term.
 
 ## Licence
-All materials are released under the GPL-3.0 licence unless otherwise stated.
+All original teaching materials in this repository are licensed under
+the Creative Commons Attribution 4.0 International (CC BY 4.0).
+Third-party readings are provided for educational reference.
+Copyright remains with the original authors and publishers.
