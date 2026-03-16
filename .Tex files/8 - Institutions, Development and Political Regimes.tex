@@ -1,0 +1,1266 @@
+\documentclass[10pt]{beamer}
+\usetheme{metropolis}
+\usecolortheme{default}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usetikzlibrary{arrows.meta, positioning, calc, shapes, fit, backgrounds, patterns}
+\definecolor{myTeal}{HTML}{23373b}
+\definecolor{myOrange}{HTML}{EB811B}
+\setbeamercolor{alerted text}{fg=myOrange}
+
+\title{Institutions, Development \& Political Regimes}
+\subtitle{ECO1028 -- Politics Without Romance}
+\author{Beatriz Gietner\\
+\texttt{beatriz.gietner@dcu.ie}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\begin{frame}[allowframebreaks]{The Final Lecture: Where We Have Been}
+
+\textbf{This is the last lecture of the course. Before we begin, let us remember what we have built.}
+
+\begin{itemize}
+\item \textbf{Downs \& rational ignorance:} voters stay uninformed because the expected return is too low
+\item \textbf{Median voter theorem:} democratic competition pushes parties towards the centre
+\item \textbf{Political business cycles:} incumbent politicians manipulate the macroeconomy for electoral gain
+\item \textbf{Niskanen:} budget-maximising bureaucrats over-supply public services
+\item \textbf{Tiebout:} competition between jurisdictions disciplines local governments
+\item \textbf{Olson, Tullock, Stigler:} organised minorities capture regulatory and legislative processes
+\item \textbf{Behavioural economics:} all of the above are further complicated by systematic bias in how voters, politicians and bureaucrats really think
+\end{itemize}
+
+
+\alert{Every model assumes that people operate within some set of rules.}
+The rules determine who can tax, who can vote, who can enforce a contract, who can own property.
+
+
+\textbf{Today's question is the deepest one of the course:} \emph{where do those rules come from, why do they differ across countries, and why do some rules produce prosperity while others produce poverty?}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Puzzle We Will Spend Today Solving}
+\textbf{Consider the following facts:}
+\begin{itemize}
+\item Qatar's GDP per capita (PPP) is roughly \$92{,}000 per year
+\item Finland's is \$49{,}000
+\item The Democratic Republic of Congo's is approximately \$970
+\end{itemize}
+{\footnotesize Source: IMF World Economic Outlook Database, 2023. Note: GDP per capita is an average - it masks within-country inequality. In most OECD countries, median household income has grown significantly slower than GDP per capita since the 1980s \href{https://cepr.org/voxeu/columns/stagnating-median-incomes-despite-economic-growth-explaining-divergence-27-oecd}{(Nolan, Roser \& Thewissen, 2016)}.}
+
+
+These are not small differences that measurement error could explain away.\\
+A Congolese child born today will, on current trajectories, produce in her \emph{lifetime} what a Qatari produces in \emph{two years}.
+
+
+\textbf{Why?}
+Four families of answer have dominated development economics:
+\begin{enumerate}
+\item \alert{Geography} -- climate, disease burden, access to the sea
+\item \alert{Trade} -- openness, access to markets, commercial history
+\item \alert{Human capital} -- education, health, skills of the workforce
+\item \alert{Institutions} -- the rules that govern property, contracts, and political power
+\end{enumerate}
+
+
+The first three are \emph{proximate} causes. They explain differences in output, but they immediately raise a deeper question: why do some countries invest in education, trade, and infrastructure while others do not? Today's argument is that \alert{institutions} are the \emph{fundamental} cause underlying all of them.
+
+By the end of today you will know what the evidence says -- and why the answer will help us understand everything we have studied this semester on a deeper level.
+\end{frame}
+
+\begin{frame}{Three Threads to Watch}
+
+\textbf{As we build the argument, keep track of these connecting threads:}
+
+
+\begin{enumerate}
+\item \textbf{The Olson problem does not disappear at the national level.} \\[3pt]
+\footnotesize Small, well-organised elites can capture the institutions that govern the entire economy, including the legal system, property rights, and political representation.
+
+
+\item \textbf{The political business cycle logic applies to institutional change.} \\[3pt]
+\footnotesize Rulers with short time horizons choose institutions that maximise their \emph{own} extraction at the expense of aggregate growth -- for the same reason a politician chooses stimulus spending in an election year.
+
+
+\item \textbf{Behavioural frictions make institutional traps deeper.} \\[3pt]
+\footnotesize Status quo bias, path dependence, and loss aversion operate at the level of whole societies. They help explain why bad institutions persist for centuries even when almost everyone would be better off under different rules.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{The Development Gradient}
+
+\textbf{Look at how the World Bank classifies countries by GNI per capita.}
+
+Two patterns are immediately visible:
+
+\begin{enumerate}
+\item \textbf{Latitude:} low-income countries (dark purple) cluster overwhelmingly in the tropics - sub-Saharan Africa, South Asia; high-income countries (dark green) dominate mid- and high latitudes
+\item \textbf{Coastlines:} landlocked countries in Africa and Central Asia are disproportionately in the lower income groups
+\end{enumerate}
+
+
+In 1999, not a single one of the 29 landlocked countries outside of Europe had a high per capita income (Gallup, Sachs \& Mellinger, 1999).
+
+
+\alert{Is this geography causing poverty? Or is geography correlated with something else that causes poverty?}\\[4pt]
+This distinction has major policy implications.
+\end{frame}
+
+\begin{frame}{The Development Gradient}
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{world-bank-income-groups.png}
+\end{center}
+
+{\footnotesize Source: World Bank (2025) via OurWorldInData.org | CC BY. Countries classified by GNI per capita into four groups.}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{The Geography Hypothesis}
+
+\textbf{The case for geography (Jared Diamond; Jeffrey Sachs):}
+
+\begin{itemize}
+\item Tropical climates host higher burdens of disease (malaria, yellow fever) that reduce labour productivity and human capital accumulation
+\item Soil quality and agricultural potential shape whether surplus production -- and therefore specialisation, trade, and urbanisation -- can occur
+\item Landlocked countries face higher transport costs; river systems in temperate zones enabled early industrialisation
+\item Diamond's "Guns, Germs and Steel": Eurasia's east--west axis allowed technology and livestock to diffuse across similar climatic zones; the Americas' and Africa's north--south axes made diffusion much harder
+\end{itemize}
+
+
+\textbf{The political implication of geography if true:}\\
+Poverty is essentially pre-determined. If your country is in the tropics, development policy can at best partially compensate for a deep structural disadvantage.
+
+\vspace{0.5cm}
+\textbf{But there is a problem.}
+
+
+Geography is \emph{fixed}. It cannot explain the variation \emph{within} latitude bands:
+
+\begin{itemize}
+\item North and South Korea share essentially identical geography, climate, and disease environments
+\item In 1945 their income levels were broadly similar
+\item By 2000, South Korea's per capita income was many times that of North Korea
+\end{itemize}
+\begin{center}
+\includegraphics[width=1\textwidth]{gdp-per-capita-maddison-project-database.png}
+\end{center}
+
+
+\alert{Something other than geography must be doing significant work.}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{jack.PNG}
+\end{center}
+
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Trade Hypothesis}
+
+\textbf{The case for trade (Acemoglu, Johnson \& Robinson, 2005):}
+
+\begin{itemize}
+\item The Atlantic trade routes that opened after 1500 disproportionately benefited Western European coastal nations
+\item Growth of Atlantic ports -- Bristol, Amsterdam, Bordeaux -- accounts for much of the differential between Western and Eastern European growth between 1500 and 1850
+\item \emph{"The rise of Europe between 1500 and 1850 was largely the rise of Atlantic Europe."}
+\end{itemize}
+
+
+\textbf{But Acemoglu et al.\ argue this is not purely a direct trade effect.}
+
+Trade generated an \alert{institutional channel}:
+\begin{itemize}
+\item As Atlantic merchants grew wealthy, they accumulated political power
+\item They used this power to demand more secure property rights and limits on arbitrary royal expropriation
+\item The Glorious Revolution of 1688 is the canonical example: merchants and landowners defeating the Crown and embedding property rights in law
+\end{itemize}
+
+
+Wacziarg \& Welch (2008) find that countries which liberalised trade experienced roughly 1.5 percentage points higher annual growth -- but with substantial heterogeneity.\\
+Political instability and institutional weakness could \emph{eliminate} the gains from trade liberalisation entirely.
+
+
+\alert{This starts to suggest that institutions may be the fundamental variable.}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{The Human Capital Hypothesis}
+
+\textbf{The case for human capital (Mankiw, Romer \& Weil, 1992):}
+
+\begin{itemize}
+\item Differences in education and health explain a significant share of cross-country income differences
+\item Countries with higher schooling attainment and lower disease burdens are systematically richer
+\item Human capital raises labour productivity directly and enables technology adoption
+\end{itemize}
+
+
+\textbf{But this immediately raises a deeper question:}\\
+Why do some countries invest heavily in education and health while others do not?
+
+\begin{itemize}
+\item Secure property rights give households an incentive to invest in their children's education
+\item Rule of law determines whether returns to skills can actually be captured
+\item Extractive states may deliberately under-invest in education to keep populations compliant - as in the U.S.\ South after the Civil War
+\end{itemize}
+
+
+\alert{Human capital is a proximate cause of income differences. Institutions are the fundamental cause of human capital differences.}
+
+
+{\footnotesize Mankiw, G., Romer, D., \& Weil, D.\ (1992). "A Contribution to the Empirics of Economic Growth". \emph{Quarterly Journal of Economics}, 107(2), 407--437.}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{The Four Hypotheses: Summary}
+\textbf{Four explanations for why some countries are rich and others poor:}
+
+
+\begin{enumerate}
+\item \textbf{Geography} $\longrightarrow$ Income? \\[2pt]
+\footnotesize Direct effect: possibly, via disease burden and agricultural potential. But fixed -- cannot explain the Korea divergence.
+
+
+\item \textbf{Trade} $\longrightarrow$ Income? \\[2pt]
+\footnotesize Direct effect: some. But trade gains disappear when institutions are bad. And the historical link from Atlantic trade ran \emph{through} institutional change.
+
+
+\item \textbf{Human capital} $\longrightarrow$ Income? \\[2pt]
+\footnotesize Proximate effect: clearly yes. But why do some countries invest in education and health while others do not? Institutions shape the incentive to accumulate human capital in the first place.
+
+
+\item \textbf{Institutions} $\longrightarrow$ Income \\[2pt]
+\footnotesize \alert{Dominant effect.} Once institutional quality is instrumented and controlled for, geography loses its direct effect and trade becomes insignificant. Human capital accumulation itself depends on institutional incentives.
+\end{enumerate}
+
+
+\textbf{RST conclusion:} "Once we control for institutions, neither geography nor trade has a robust direct effect on income". The indirect effects of all three run through institutions.
+
+
+\footnotesize Rodrik, Subramanian \& Trebbi (2004), \emph{Journal of Economic Growth}.
+\end{frame}
+
+\section{Institutions: Definition, Measurement, Evidence}
+
+\begin{frame}[allowframebreaks]{What Economists Mean by Institutions}
+
+\textbf{The foundational definition comes from Douglass North (1991):}
+
+
+\begin{block}{North's definition}
+Institutions are \emph{"the humanly devised constraints that structure political, economic and social interaction".}
+\end{block}
+
+
+Three things to notice in this definition:
+\begin{enumerate}
+\item \textbf{Humanly devised:} institutions are choices, not forces of nature. They can, in principle, be changed
+\item \textbf{Constraints:} they restrict and shape the options available to individuals and firms
+\item \textbf{Structure interaction:} their primary effect is through \alert{incentives} -- who captures the returns from investment, risk-taking, and innovation
+\end{enumerate}
+
+
+\textbf{Adam Smith already saw this.} The epigraph of Rodrik et al.\ (2004) is from the \emph{Wealth of Nations}: "Commerce\ldots can seldom flourish long in any state which does not enjoy a regular administration of justice, in which the people do not feel themselves secure in the possession of their property".
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Formal and Informal Institutions}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\color{myTeal} Formal institutions}\\[6pt]
+\begin{itemize}
+\item Constitutions
+\item Legal systems and courts
+\item Property rights law
+\item Electoral rules
+\item Regulatory agencies
+\item Contract enforcement
+\end{itemize}
+\vspace{4pt}
+\footnotesize Written down; enforced by state power.
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\color{myOrange} Informal institutions}\\[6pt]
+\begin{itemize}
+\item Norms of reciprocity
+\item Trust between strangers
+\item Corruption norms
+\item Social sanctions
+\item Business customs
+\item Political culture
+\end{itemize}
+\vspace{4pt}
+\footnotesize Not written; enforced by social pressure and reputation.
+\end{column}
+\end{columns}
+
+
+\begin{itemize}
+\item Formal institutions can be reformed by legislation overnight; informal institutions take generations
+\item A formal constitution means nothing if courts are bribed, witnesses are silenced, and property records can be altered
+\item This is why institutional transplants -- copying a legal system from one country to another -- so often fail
+\end{itemize}
+
+
+\alert{North's key insight: the interaction between formal rules and informal norms determines how institutions actually function.}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Measuring Institutional Quality}
+
+\textbf{Measuring something as broad as "institutions" is genuinely hard.}
+
+
+The most widely used measure is the World Bank's \textbf{Rule of Law Index}, which captures:
+\begin{itemize}
+\item Perceptions of contract enforcement quality
+\item Security of property rights
+\item Quality and independence of courts
+\item Likelihood of crime and violence
+\end{itemize}
+Constructed from a wide range of data sources; scored on a $-2.5$ to $+2.5$ scale.
+
+
+\textbf{Other commonly used measures:}
+\begin{itemize}
+\item \textbf{Protection against expropriation} (Political Risk Services) -- used by Hall \& Jones (1999) and Acemoglu et al.\ (2001)
+\item \textbf{Constraint on the executive} (Polity IV dataset)
+\item \textbf{Entry barriers} (Djankov et al., 2002) -- cost of starting a business as a \% of GDP per capita
+\item \textbf{Corruption perceptions} (Transparency International)
+\end{itemize}
+
+
+\textbf{A legitimate criticism:} some of these measures are \emph{outcomes}, not rules. \\
+If a country has high crime, that appears in the Rule of Law index -- but high crime may be the consequence of bad institutions, not a measure of them.
+This creates potential circularity.
+
+
+\alert{This is why credible empirical work on institutions needs exogenous variation -- an instrument.}\\[4pt]
+We will see exactly how researchers found one.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{How Large Are Institutional Differences? A Benchmark}
+
+\textbf{Djankov et al.\ (2002) on the cost of starting a medium-sized business (1999):}
+
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Country} & \textbf{Cost (\% of GDP per capita)} & \textbf{Time (days)} \\
+\midrule
+United States & 0.02\% & 4 \\
+Ireland & $\sim$0.4\% & 24 \\
+Kenya & 1.16\% & 68 \\
+Nigeria & 2.70\% & 44 \\
+Dominican Republic & 4.95\% & 82 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+This is a measure of \alert{entry barriers} -- one specific institutional dimension.
+Entry barriers protect incumbents from competition and suppress the creation of new enterprises.
+
+
+\textbf{Connect this back to Stigler:} who benefits from high entry barriers? \\
+Existing firms who fund political parties and lobby regulators. The barrier is not an accident.
+\end{frame}
+
+
+
+\section{Institutions Rule: The Empirical Case}
+
+
+
+\begin{frame}[allowframebreaks]{Hall \& Jones (1999): The First Systematic Test}
+
+\textbf{Hall \& Jones were the first to empirically quantify the effect of institutions on development.}
+
+
+They construct a measure of \textbf{social infrastructure}: an equally-weighted combination of:
+\begin{itemize}
+\item An index of government anti-diversion policies (protecting from expropriation, rule of law, bureaucratic quality, contract enforcement)
+\item Trade openness
+\end{itemize}
+
+
+\textbf{Main finding:}
+Differences in social infrastructure account for large cross-country differences in:
+\begin{itemize}
+\item Capital accumulation
+\item Educational attainment
+\item Productivity
+\item \ldots and therefore income per worker
+\end{itemize}
+
+
+\textbf{The causal identification problem:}\\
+Rich countries might simply \emph{afford} better institutions. The correlation tells us the variables move together; it does not tell us which drives which.
+
+
+Hall \& Jones instrument social infrastructure using:
+\begin{itemize}
+\item Distance from the equator (geography)
+\item Fraction of population speaking English and Western European languages as a first language (colonial history)
+\end{itemize}
+
+
+\alert{Even after instrumenting, social infrastructure has a large positive causal effect on output per worker.}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Colonial Experiment (Acemoglu, Johnson \& Robinson, 2001)}
+
+\textbf{How do you find truly exogenous variation in institutions?}
+
+
+The Europeans who colonised the rest of the world from the 15th century onwards imposed very \emph{different} types of institutions in different territories.
+
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\color{myTeal} Extractive states}\\[6pt]
+Africa, Central America, Caribbean, South Asia\\[4pt]
+\footnotesize
+European settlers were \emph{few or absent}.\\
+Objective: extract resources as efficiently as possible.\\
+Institutions: highly centralised, no property rights for the native population, no checks on government.\\[4pt]
+\alert{These institutions persisted after independence.}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\color{myOrange} Settler states}\\[6pt]
+USA, Canada, Australia, New Zealand\\[4pt]
+\footnotesize
+European settlers came \emph{in large numbers}.\\
+Objective: build a society to live in.\\
+Institutions: property rights enforced broadly, checks on government, rule of law.\\[4pt]
+\alert{These institutions also persisted after independence.}
+\end{column}
+\end{columns}
+
+
+\textbf{The instrument:} settler mortality rates.
+
+During colonisation, Europeans faced \emph{very different mortality rates} across colonies -- determined by malaria and yellow fever prevalence.
+
+\begin{itemize}
+\item Where mortality was \emph{low}: Europeans settled in large numbers $\Rightarrow$ settler institutions $\Rightarrow$ secure property rights today
+\item Where mortality was \emph{high}: Europeans did not settle $\Rightarrow$ extractive institutions $\Rightarrow$ weak property rights today
+\end{itemize}
+
+
+Settler mortality $\approx$ 200 years ago should have \emph{no direct effect} on income today -- its effect runs through the institutional channel it created.
+
+
+\alert{AJR's estimated effect: improving Nigeria's institutions to Chile's level could, in the long run, produce a 7-fold increase in Nigerian income.}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Rodrik, Subramanian \& Trebbi (2004): Institutions Rule}
+
+\textbf{RST synthesise the three hypotheses in a single econometric framework.}
+
+
+They simultaneously estimate the effects of:
+\begin{itemize}
+\item \textbf{Institutions} (Rule of Law index, instrumented with settler mortality and colonial language)
+\item \textbf{Integration} (log openness to trade, instrumented with Frankel--Romer gravity-based trade shares)
+\item \textbf{Geography} (distance from equator, as a direct control)
+\end{itemize}
+
+
+\textbf{Main findings:}
+
+\begin{enumerate}
+\item \textbf{Institutions trump everything.} Once institutional quality is controlled for, trade openness is statistically insignificant -- and sometimes even enters with the wrong sign.
+\item \textbf{Geography's direct effect weakens substantially.} In RST's specification, distance from the equator loses significance once institutions are included - though not all specifications agree.
+\item \textbf{Geography affects income indirectly.} Geography shaped where Europeans could settle, which shaped which type of institutions were imposed, which shapes income today.
+\item Results are robust to changing the measure of institutions and the measure of geography.
+\end{enumerate}
+
+
+\alert{"Institutions rule" -- this is literally the title of the paper. This is one highly influential view in development economics; the debate on identification and interpretation continues.}
+
+\textbf{Intuition for why trade loses significance:}
+Trade generates growth \emph{only} if the domestic institutional environment allows firms to invest, contracts to be enforced, and profits to be retained. In a kleptocracy, expanded trade just gives the ruler more to steal.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Comparative Development: The Korea Case}
+
+\textbf{The most striking natural experiment in development economics.}
+
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\color{myTeal} Republic of Korea (South)}\\[6pt]
+\begin{itemize}
+\item Capitalist institutions
+\item Private ownership of means of production
+\item Legal protection for producers
+\item Authoritarian initially, but growth-oriented
+\item Rapid industrialisation through chaebols, with state direction
+\end{itemize}
+\vspace{4pt}
+\footnotesize \alert{One of the fastest growth episodes in modern history.}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\color{myOrange} Democratic People's Republic of Korea (North)}\\[6pt]
+\begin{itemize}
+\item Centralised command economy
+\item Little private property
+\item No checks on government
+\item Highly personalised political power (Kim Il Sung $\to$ Kim Jong Il $\to$ Kim Jong Un)
+\end{itemize}
+\vspace{4pt}
+\footnotesize \alert{Minimal economic growth since 1950; periodic famine.}
+\end{column}
+\end{columns}
+
+
+\textbf{Same geography. Same historical background. Same culture.}\\
+Different institutions. Dramatically different outcomes.
+
+
+\alert{The Korea case is about as close as we get to a controlled experiment in economic development.}
+\end{frame}
+
+
+\section{Power, Persistence, and Path Dependence}
+
+
+
+\begin{frame}[allowframebreaks]{Why Do Bad Institutions Persist? The Political Economy}
+
+\textbf{If we know good institutions produce prosperity, why don't all countries have them?}
+
+
+Acemoglu \& Robinson (2008) provide the framework: the answer is \alert{political power}.
+
+
+\textbf{The key logic:}
+
+\begin{enumerate}
+\item Economic institutions are not chosen by a benevolent social planner. They are the collective outcome of a \emph{political process}.
+\item Different institutional arrangements produce different distributions of income and power.
+\item Therefore, groups with political power will choose institutions that benefit \emph{them} -- not necessarily institutions that maximise aggregate output.
+\item The groups who benefit from bad institutions are precisely those who have the power to block reform.
+\end{enumerate}
+
+
+\textbf{Connect this to Olson:} this is the interest group logic taken to the macro level. The "special interest" here is the ruling elite. The "dispersed cost" is borne by the entire economy.
+
+
+\alert{This is why institutional reform is so difficult, and why foreign aid and policy advice that ignores the political equilibrium so often fails.}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Olson's Stationary Bandit}
+
+\textbf{Why would any ruler ever provide good institutions?}
+
+
+Mancur Olson (1993) offers a public choice answer using a simple analogy:
+
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\color{myOrange} Roving bandit}\\[6pt]
+Steals everything he can and moves on.\\[4pt]
+\footnotesize No incentive to leave anything behind. No incentive to protect property rights or invest in public goods. Pure extraction.\\[4pt]
+\alert{Warlords. Failed states. Looting armies.}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\color{myTeal} Stationary bandit}\\[6pt]
+Controls a fixed territory and plans to stay.\\[4pt]
+\footnotesize Now has an \emph{encompassing interest} in the productivity of the territory. Provides order, enforces contracts, protects property -- because a richer population means more to extract next year.\\[4pt]
+\alert{The origin of the state.}
+\end{column}
+\end{columns}
+
+
+\textbf{The public choice punchline:}\\
+Even a self-interested ruler with no concern for citizens' welfare may provide growth-enhancing institutions -- \emph{if} his time horizon is long enough and his hold on power is secure enough.
+
+
+\alert{This explains developmental dictatorships -- and why short time horizons produce extraction instead of investment.}\\[3pt]
+\footnotesize Connect this back to Week 4: the political business cycle is a short time horizon problem. So is kleptocracy.\\[3pt]
+Olson, M.\ (1993). "Dictatorship, Democracy, and Development". \emph{American Political Science Review}, 87(3), 567--576.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{De Jure vs.\ De Facto Power}
+
+\textbf{Acemoglu \& Robinson distinguish two types of political power:}
+
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\color{myTeal} De jure power}\\[6pt]
+Power that derives from \emph{formal institutions}: the constitution, electoral rules, property law.\\[4pt]
+\footnotesize
+Examples: voting rights, parliamentary seats, judicial appointment.\\[4pt]
+Can be changed by legislation -- on paper, overnight.
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\color{myOrange} De facto power}\\[6pt]
+Power that derives from \emph{resources and capacity}: wealth, weapons, organisation, the ability to mobilise.\\[4pt]
+\footnotesize
+Examples: land ownership, control of the military, financial resources, network of patronage.\\[4pt]
+Cannot be changed by legislation. Changes slowly, if at all.
+\end{column}
+\end{columns}
+
+
+\textbf{Why is this distinction important?}
+
+Reform typically changes de jure power.\\
+If de facto power is unchanged, the old elite can use it to re-establish control under new formal rules.
+
+
+\alert{This is the fundamental problem with institutional reform: you cannot legislate away de facto power.}
+\end{frame}
+
+\begin{frame}{State Capacity and Constraints: A 2x2}
+
+\textbf{Institutions require both limits on power and the capacity to implement policy.}
+
+
+\begin{center}
+\begin{tabular}{p{2.2cm}|p{3.8cm}|p{3.8cm}}
+& \textbf{Low constraints} & \textbf{High constraints} \\
+\hline
+\textbf{High capacity} & \textit{Developmental dictatorship} \newline South Korea (1960s), Singapore, China post-1978 \newline \footnotesize Growth possible but fragile; depends on ruler's interests & \textit{Liberal developmental state} \newline Botswana, Ireland, Nordics \newline \footnotesize \alert{The target: capable and accountable} \\
+\hline
+\textbf{Low capacity} & \textit{Extractive/failed state} \newline DRC, Haiti, Zimbabwe \newline \footnotesize Neither delivers public goods nor enforces rights & \textit{Weak but constrained} \newline Many post-colonial democracies \newline \footnotesize Elections without effective bureaucracy \\
+\end{tabular}
+\end{center}
+
+
+\footnotesize Most development advice focuses on the horizontal axis (constraints). Besley \& Persson (2011) argue the vertical axis (capacity) is just as important - and is harder to build.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Path Dependence: The U.S. South}
+
+\textbf{The most powerful case study in Acemoglu \& Robinson (2008).}
+
+
+After the Civil War (1865), formal institutions in the U.S.\ South changed dramatically:
+\begin{itemize}
+\item Slavery was abolished
+\item Freed slaves were enfranchised (de jure power changed massively)
+\item The Union Army occupied the South during Reconstruction (1865--1877)
+\end{itemize}
+
+
+\textbf{What happened to the Southern economy?}
+
+Almost nothing. The same labour-repressive plantation system persisted in a new form:
+\begin{itemize}
+\item Planter elites retained land (de facto power intact)
+\item Black Codes were passed restricting labour mobility
+\item The Ku Klux Klan used terror to enforce compliance
+\item Jim Crow segregation laws were systematically enacted
+\item By the 1890s, poll taxes and literacy tests had effectively re-disenfranchised the freed population
+\end{itemize}
+
+
+Income per capita in the South remained at roughly \emph{half} the national average until the 1940s.
+
+
+\alert{Changes in de jure power that leave de facto power intact often do not change the economic equilibrium.}
+
+
+\textbf{The quotation in Wiener (1978):} tracking planter families in Alabama through the 1850--1870 censuses, 72\% of the largest landowners in 1870 came from the elite families of 1860. The political transition barely dented the socioeconomic elite.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The See-Saw Effect of Reform}
+
+\textbf{A dysfunctional political equilibrium uses multiple instruments to achieve the same goal.}
+
+
+If you reform one instrument, the underlying incentives remain -- so another instrument is substituted.\\[4pt]
+Acemoglu et al.\ (2003) call this \alert{the see-saw effect}.
+
+
+\textbf{Case: Latin America in the 1980s--90s.}
+
+IMF/World Bank structural adjustment removed the instruments of the old political economy:
+\begin{itemize}
+\item Privatisation replaced state enterprises
+\item Tariff liberalisation replaced protectionist industrial policy
+\item Currency boards removed exchange rate manipulation
+\end{itemize}
+
+
+\textbf{But the political incentive to redistribute rents to supporters did not disappear.}\\
+In Argentina, the Peronist party adapted: privatisation was used to deliver assets to political supporters; labour deregulation was partially offset by giving unions a stake in privatised firms.
+
+
+\alert{The instruments changed. The political equilibrium did not.}
+
+
+\textbf{The lesson:} direct institutional reform is unlikely to work if it leaves the political equilibrium intact. You must change the incentives of those who hold power, as well as the rules on paper.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Iron Law of Oligarchy}
+
+\textbf{What happens when de jure \emph{and} de facto power are both changed?}
+
+
+Acemoglu \& Robinson call the troubling answer the \alert{iron law of oligarchy} (originally from Michels, 1911):
+
+
+\emph{Even when elites are replaced, new elites tend to replicate the same structures.}
+
+
+\textbf{Bolivia, 1952:}
+\begin{itemize}
+\item The MNR revolution expropriated the landed elite, nationalised the tin mines, gave land to peasants, introduced universal suffrage
+\item Both de jure and de facto power shifted radically
+\item Within a decade: the MNR had recreated clientelistic politics, rebuilt a patronage network using the same logic as the elites it replaced
+\item Kelley \& Klein (1981): inequality had returned to 1952 levels within 10 years
+\end{itemize}
+
+
+\textbf{Why?} The strategies of the old elite were optimal given the political environment. When the MNR competed for power, it had to use similar strategies to win -- and once in power, had similar incentives to maintain them.
+
+
+\alert{Path dependence can survive even the complete replacement of one elite by another.}\\[4pt]
+The incentive structure is reproduced because the environment that generated it -- the absence of checks, balances, and civil society -- remains.
+\end{frame}
+
+
+\section{Institutions Across Political Regimes}
+
+\begin{frame}[allowframebreaks]{Political Regimes \& Economic Performance: The Core Trade-off}
+
+\textbf{Regime type shapes institutions through different incentive structures.}
+
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\color{myTeal} Democracy}\\[6pt]
+\begin{itemize}
+\item \textbf{Accountability:} rulers can be removed; harder to expropriate
+\item Broad taxation base; pressure to provide public goods
+\item Free press and civil society constrain elite capture
+\item \footnotesize \alert{Problem:} short electoral cycles create short time horizons (Week 4)
+\item \footnotesize \alert{Problem:} rational ignorance lets elites capture policy anyway (Week 2)
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\color{myOrange} Autocracy}\\[6pt]
+\begin{itemize}
+\item \textbf{Commitment:} can credibly promise long-run policies
+\item Olson's stationary bandit: long time horizon may align ruler's interest with growth
+\item Can override vested interests blocking reform
+\item \footnotesize \alert{Problem:} no mechanism to remove predatory ruler
+\item \footnotesize \alert{Problem:} depends entirely on ruler's preferences and survival incentives
+\end{itemize}
+\end{column}
+\end{columns}
+
+
+\alert{Neither regime type automatically produces good institutions.}\\
+The key question is whether the political equilibrium aligns rulers' survival incentives with broad prosperity - and that can happen under either regime, for different reasons.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Democracy, Autocracy, and Economic Growth}
+
+\textbf{The natural question: do democracies have better institutions?}
+
+
+The answer is: \emph{not automatically.}
+
+
+\textbf{The theoretical case for democracy:}
+\begin{itemize}
+\item Elections punish rulers who expropriate too much
+\item Free press reveals corruption
+\item Median voter theorem: policies reflect majority preferences, not just elite interests
+\item Checks and balances limit executive discretion over property rights
+\end{itemize}
+
+
+\textbf{But the empirical record is more complicated:}
+\begin{itemize}
+\item South Korea, Taiwan, Singapore: rapid development under authoritarian regimes
+\item Sub-Saharan Africa: multiple democratic transitions have not reliably improved economic institutions
+\item Post-communist Eastern Europe: democratisation produced variable institutional outcomes depending on pre-existing civil society and elite structure
+\end{itemize}
+
+
+\textbf{The concept of "developmental dictatorship":}\\
+Some authoritarian regimes -- South Korea under Park Chung-hee, Singapore under Lee Kuan Yew, China after 1978 -- produced extraordinary growth.
+
+
+\alert{Why? Acemoglu \& Robinson argue: because the ruler's interests happened to align with aggregate growth.}\\[4pt]
+A ruler threatened by external invasion (Korea), surrounded by larger neighbours (Singapore), or leading a revolution (China) may find that aggregate growth strengthens their political position.\\[4pt]
+This is a contingent alignment, not a structural feature of autocracy.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Why There Are No Developmental Dictatorships in Africa}
+
+\textbf{Acemoglu \& Robinson (2008) note a striking empirical regularity:}
+
+There have been developmental dictatorships in East Asia. There has \emph{never} been one in sub-Saharan Africa.
+
+
+\textbf{A possible explanation:}
+
+\begin{itemize}
+\item In East Asia, rulers faced \alert{external threats} (Cold War, hostile neighbours) that made aggregate economic performance strategically important to regime survival
+\item In Africa, many post-colonial rulers faced fewer external threats -- survival was secured through ethnic mobilisation, resource control, and great-power patronage during the Cold War
+\item The extractive institutions established under colonialism provided a ready template: control the port, the capital, and the mining sector; distribute rents to key allies
+\item \alert{The political equilibrium that sustains extraction is more robust than one that requires building effective states}
+\end{itemize}
+
+
+\textbf{This connects directly to the rent-seeking we covered with Tullock:}\\
+Competing for control of extractive institutions is a zero-sum game. Resources are burned in the competition, and the winner uses them to maintain control instead of investing in public goods.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Limits of Democratic Transitions}
+
+\textbf{Does democratisation automatically improve institutions?}
+
+
+Acemoglu \& Robinson argue: only when it changes the political equilibrium as well as the formal rules.
+
+
+\textbf{Cambodia after 1993:}
+\begin{itemize}
+\item After the Paris Peace Accords, Cambodia introduced multiparty elections
+\item The Cambodian People's Party (CPP), founded by former Khmer Rouge cadres including Hun Sen, competed
+\item CPP won 1,591 of 1,621 commune chief elections when these were introduced in 2002
+\item Opposition figures were exiled or arrested
+\end{itemize}
+
+De jure democratic institutions were introduced. De facto power -- control of the military, bureaucracy, and patronage networks -- remained entirely with the CPP.
+
+
+\textbf{The general pattern:}\\
+In societies with high economic inequality, concentrated land ownership, and weak civil society, new democratic institutions will be captured by existing elites with superior resources and organisation.
+
+
+\alert{Formal democratisation alone has limited effects when the distribution of economic resources is unchanged.}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{What Does Successful Institutional Reform Look Like?}
+
+\textbf{Some countries do manage genuine institutional transition. Acemoglu \& Robinson offer Botswana as a case study.}
+
+
+\textbf{Why Botswana?}
+\begin{itemize}
+\item Sub-Saharan Africa's fastest average growth rate over 35 years
+\item Ranked at Western European levels on governance and anti-corruption indices
+\item Has diamonds -- but so do many African states that have not developed
+\end{itemize}
+
+
+\textbf{The institutional explanation (Parsons \& Robinson, 2006):}
+\begin{itemize}
+\item Pre-colonial Tswana political institutions placed \alert{genuine constraints} on chiefs and elites -- these were not destroyed by British colonialism, which was relatively marginal
+\item At independence, the political elite was heavily invested in \emph{ranching} -- so secure property rights served \emph{their} interests
+\item As in Britain after the Glorious Revolution: good economic institutions were politically self-sustaining because elites had a stake in them
+\end{itemize}
+
+
+\alert{The lesson is sobering:} the most durable path to good institutions may be one where the elite \emph{wants} them, when their own economic interests align with broad property rights.
+\end{frame}
+
+
+\section{Course Synthesis: Public Choice at the National Level}
+
+\begin{frame}[allowframebreaks]{The Full Picture: Public Choice Meets Development}
+
+\textbf{We can now read the entire course through a single lens.}
+
+
+\textbf{Public choice theory} started from an observation about democracies: politicians, voters, and bureaucrats are self-interested, and democratic institutions do not automatically produce good policy.
+
+
+\textbf{Development economics} reaches the same conclusion from a different direction: the fundamental barrier to prosperity is the political equilibrium that makes good institutions \emph{politically unsustainable}.
+
+
+\textbf{The connections:}
+
+\begin{itemize}
+\item \textbf{Rational ignorance $\leftrightarrow$ extractive institutions:} uninformed voters cannot hold rulers accountable, giving elites room to design institutions that serve narrow interests
+\item \textbf{Median voter theorem $\leftrightarrow$ democratic transitions:} in highly unequal societies, the median voter supports redistribution -- but elites use de facto power to block it, undermining the theorem's predictions
+\item \textbf{Olson's collective action $\leftrightarrow$ the iron law:} the same logic that explains why industrial lobbies capture regulators explains why ruling elites capture entire states
+\item \textbf{Political business cycles $\leftrightarrow$ short-horizon rulers:} a dictator with a short time horizon produces the same outcomes as a democratic politician focused on re-election -- extractive, short-termist, growth-destroying policy
+\item \textbf{Bureaucracy $\leftrightarrow$ state capacity:} Niskanen's budget-maximising bureaucrat is relatively benign; in low-capacity states, the central problem is outright embezzlement and service non-delivery
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{What This Course Cannot Tell You}
+
+\textbf{Intellectual honesty requires acknowledging what we do not know.}
+
+
+\begin{itemize}
+\item We know that institutions do more explanatory work than geography or trade in long-run prosperity
+\item We know that bad institutions persist because they serve the interests of those with power
+\item We know that formal institutional reform often fails because it leaves de facto power intact
+\end{itemize}
+
+
+\textbf{What we do not know:}
+\begin{itemize}
+\item Under what exact circumstances do societies escape bad institutional equilibria?
+\item Can external pressure (international organisations, conditionality, foreign aid) ever change the political equilibrium itself, instead of only changing the instruments?
+\item Is the Washington Consensus failure a failure of the \emph{content} of the reforms, or a failure to address the \emph{political context}?
+\end{itemize}
+
+
+Acemoglu \& Robinson (2008) are candid: \emph{"As yet, we only have a highly preliminary understanding of the factors that lead a society into a political equilibrium that supports good economic institutions".}
+
+
+\alert{This is the frontier. This is what research is for.}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Irish Context: A Small Open Economy with Good Institutions}
+
+\textbf{Ireland sits at the top of most institutional quality indices.}
+
+
+\begin{itemize}
+\item World Bank Rule of Law: Ireland consistently scores above 1.5 (out of 2.5)
+\item Transparency International CPI: typically ranked in the top 10--15 globally
+\item Low barriers to entry; strong enforcement of contracts; independent judiciary
+\end{itemize}
+
+
+\textbf{But Irish institutions are not without institutional public choice problems:}
+\begin{itemize}
+\item The planning system has long been identified as subject to developer capture (Mahon Tribunal)
+\item The healthcare system exhibits classic budget-maximising bureaucracy dynamics (Niskanen)
+\item The Dáil's dominance by two historically similar parties (Fianna Fáil, Fine Gael) has been read as a median-voter convergence story -- but also as elite entrenchment
+\item Rent-seeking in housing supply: planning restrictions that benefit incumbents (existing landowners, established developers) at the expense of new entrants
+\end{itemize}
+
+
+\alert{Good formal institutions do not eliminate public choice dynamics. They constrain them.}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Three Things to Remember}
+
+\textbf{This lecture was dense. Here are the three main points.}
+
+
+\begin{enumerate}
+\item \textbf{Institutions shape incentives.} \\[3pt]
+\footnotesize Property rights, contract enforcement, and constraints on government determine whether individuals and firms can capture the returns from investment, innovation, and effort. Without them, growth is impossible or unsustainable.
+
+
+\item \textbf{Power explains persistence.} \\[3pt]
+\footnotesize Bad institutions survive because the groups who benefit from them are precisely those with the power to block reform. This is the Olson/Stigler logic applied to entire economies.
+
+
+\item \textbf{Formal reform fails if underlying power does not change.} \\[3pt]
+\footnotesize Changing the rules on paper - introducing elections, privatising state firms, writing a new constitution - does not change outcomes if de facto power remains in the same hands. The see-saw effect and the iron law of oligarchy are why development is hard.
+\end{enumerate}
+
+
+\alert{These three points connect everything we have studied this semester: voters, politicians, bureaucrats, interest groups, and now the rules that govern them all.}
+\end{frame}
+
+\begin{frame}{Discussion: Three Minutes}
+
+\begin{block}{Choose one question to discuss with the person next to you:}
+
+\begin{enumerate}
+\item \textbf{The capacity-constraint trade-off:}\\
+Would you rather inherit a state with good institutions but low capacity, or high capacity but weak constraints on the executive? Why?
+
+
+\item \textbf{Why isn't every state Botswana?}\\
+Botswana had diamonds, pre-colonial constraints on chiefs, and elites invested in ranching. Which of these was most important - and can any of them be deliberately engineered?
+
+
+\item \textbf{The public choice challenge:}\\
+If politicians are self-interested (Buchanan), voters are rationally ignorant (Downs), and interest groups capture regulation (Stigler) - what exactly is left to prevent extractive institutions from winning?
+\end{enumerate}
+\end{block}
+
+
+\footnotesize We will take 3 minutes, then hear two or three responses.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Closing: The Politics Without Romance Thesis -- Revisited}
+
+\textbf{This course began with a thesis:}
+
+
+\begin{block}{Buchanan's insight}
+We should analyse politicians, voters, and bureaucrats the same way we analyse producers and consumers -- as self-interested agents responding to incentives. There is no reason to assume that entering public life transforms people into altruistic servants of the common good.
+\end{block}
+
+
+\textbf{Today's material adds a darker extension:}\\
+The institutions that are supposed to channel self-interest towards good outcomes are themselves the product of self-interested political competition. The rules of the game are made by players with stakes in those rules.
+
+
+\textbf{And yet:}\\
+Some societies have built institutions that work. Britain after 1688. Botswana after independence. South Korea after the 1960s. Ireland since the 1990s.
+
+
+\alert{The central question is which political and economic configurations make good institutions sustainable.}\\[4pt]
+That is an empirical question. And it remains, in large part, unanswered.
+
+
+\textbf{Thank you for a great semester.}
+\end{frame}
+
+
+\section*{Key Readings}
+
+\begin{frame}{Core Readings for This Week}
+\footnotesize
+\begin{enumerate}
+\item \textbf{Rodrik, D., Subramanian, A., \& Trebbi, F.} (2004). "Institutions Rule: The Primacy of Institutions Over Geography and Integration in Economic Development". \emph{Journal of Economic Growth}, 9, 131--165.
+\item \textbf{Acemoglu, D., \& Robinson, J.} (2008). "The Role of Institutions in Growth and Development". \emph{Commission on Growth and Development Working Paper No.\ 10}.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Further Reading}
+\footnotesize
+\begin{enumerate}
+\item Acemoglu, D., \& Robinson, J.\ A.\ (2006). \emph{Economic Origins of Dictatorship and Democracy}. Cambridge University Press.
+\item Acemoglu, D., Johnson, S., \& Robinson, J.\ A.\ (2001). "The Colonial Origins of Comparative Development". \emph{American Economic Review}, 91(5), 1369--1401.
+\item Acemoglu, D., Johnson, S., \& Robinson, J.\ A.\ (2005). "Institutions as the Fundamental Cause of Long-Run Growth". In Aghion \& Durlauf (eds.), \emph{Handbook of Economic Growth}.
+\item Acemoglu, D., Johnson, S., \& Robinson, J.\ A.\ (2005). "The Rise of Europe: Atlantic Trade, Institutional Change and Economic Growth". \emph{American Economic Review}, 95(3), 546--579.
+\item Acemoglu, D., \& Robinson, J.\ A.\ (2012). \emph{Why Nations Fail}. Crown Publishers.
+\item Besley, T., \& Persson, T.\ (2011). \emph{Pillars of Prosperity}. Princeton University Press.
+\item Djankov, S., La Porta, R., Lopez-de-Silanes, F., \& Shleifer, A.\ (2002). "The Regulation of Entry". \emph{Quarterly Journal of Economics}, 117(1), 1--37.
+\item Engerman, S.\ L., \& Sokoloff, K.\ L.\ (2002). "Factor Endowments, Inequality, and Paths of Development among New World Economies". \emph{NBER Working Paper 9259}.
+\item Gallup, J.\ L., Sachs, J.\ D., \& Mellinger, A.\ D.\ (1999). "Geography and Economic Development". \emph{International Regional Science Review}, 22(2), 179--232.
+\item Hall, R.\ E., \& Jones, C.\ I.\ (1999). "Why Do Some Countries Produce So Much More Output per Worker than Others?" \emph{Quarterly Journal of Economics}, 114(1), 83--116.
+\item Michels, R.\ (1962). \emph{Political Parties}. Free Press.
+\item Nolan, B., Roser, M., \& Thewissen, S.\ (2016). "GDP per Capita versus Median Household Income". Oxford INET Working Paper 2016-03.
+\item North, D.\ C.\ (1990). \emph{Institutions, Institutional Change and Economic Performance}. Cambridge University Press.
+\item Olson, M.\ (1993). "Dictatorship, Democracy, and Development". \emph{American Political Science Review}, 87(3), 567--576. [\textbf{Recommended}: 10 pages; bridges collective action logic directly to institutions and development]
+\item Olson, M.\ (2000). \emph{Power and Prosperity}. Basic Books.
+\item Parsons, Q.\ N., \& Robinson, J.\ A.\ (2006). "State Formation and Governance in Botswana". \emph{Journal of African Economies}, 15, 100--140.
+\item Persson, T., \& Tabellini, G.\ (2000). \emph{Political Economics: Explaining Economic Policy}. MIT Press.
+\item Rodrik, D.\ (2006). "Goodbye Washington Consensus, Hello Washington Confusion?" \emph{Journal of Economic Literature}, 44(4), 973--987.
+\item Sen, A.\ (1999). \emph{Development as Freedom}. Anchor Books.
+\item Wacziarg, R., \& Welch, K.\ H.\ (2008). "Trade Liberalization and Growth: New Evidence". \emph{World Bank Economic Review}, 22(2), 187--231.
+\item World Bank Governance Indicators: \texttt{info.worldbank.org/governance/wgi}
+\end{enumerate}
+\end{frame}
+
+
+\section*{Cultural Resources}
+
+\begin{frame}{Films and Documentaries}
+\textbf{Institutions and Development in the Wild:}
+\begin{itemize}
+\item \textbf{No} (2012, Pablo Larraín) -- how a political advertising campaign helped end a military dictatorship; property rights, civil society, and the fragility of authoritarian institutions
+\item \textbf{The Wire}, Season 3 (2004) -- Baltimore as a case study in institutional failure: police, politics, and the persistence of dysfunction despite repeated "reform"
+\item \textbf{Beasts of No Nation} (2015) -- how state failure and extractive warlord politics reproduce themselves; the see-saw effect in its most brutal form
+\item \textbf{13th} (2016, Ava DuVernay) -- documentary on the carceral system in the United States as a direct extension of the post-Civil War Southern equilibrium described by Acemoglu \& Robinson
+\item \textbf{The Two Escobars} (2010) -- how a political economy built on cocaine rent-seeking corrupted Colombian institutions at every level; Tullock's triangles at national scale
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Books for a General Audience}
+\begin{itemize}
+\item Acemoglu, D., \& Robinson, J.\ A.\ -- \emph{Why Nations Fail} (2012): the accessible version of today's content; one of the most influential popular economics books of the past 20 years
+\item North, D.\ C.\ -- \emph{Institutions, Institutional Change and Economic Performance} (1990): short and readable; the foundational text
+\item Diamond, J.\ -- \emph{Guns, Germs and Steel} (1997): the geography hypothesis in its most compelling form; read alongside the critiques
+\item Easterly, W.\ -- \emph{The White Man's Burden} (2006): a sharp critique of the aid and reform consensus; written from inside the World Bank
+\item Collier, P.\ -- \emph{The Bottom Billion} (2007): why some countries are stuck in conflict, natural resource traps, or landlocked poverty -- and what institutions can do
+\item Acemoglu, D., \& Robinson, J.\ A.\ -- \emph{The Narrow Corridor} (2019): the sequel, on how states and societies interact to keep liberty alive
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Podcasts and Data}
+\textbf{Institutions and Development in Audio:}
+\begin{itemize}
+\item \textbf{Conversations with Tyler} (Tyler Cowen) -- episodes with Acemoglu, Robinson, and many development economists
+\item \textbf{EconTalk} -- Russ Roberts interviews on institutional economics; the Douglass North memorial episode is essential
+\item \textbf{Development Drums} (Owen Barder, CGD) -- practitioner-focused discussions of what works in development
+\end{itemize}
+
+
+\textbf{Data Sources:}
+\begin{itemize}
+\item World Bank Governance Indicators: \texttt{info.worldbank.org/governance/wgi}
+\item Our World in Data (Development): \texttt{ourworldindata.org/economic-growth}
+\item Varieties of Democracy (V-Dem): \texttt{v-dem.net} -- granular measures of democratic institutions across 200 countries
+\item Polity5 Project: regime characteristics from 1800 to present
+\end{itemize}
+\end{frame}
+
+\appendix
+\section*{Backup Slides}
+
+\begin{frame}[allowframebreaks]{The Formal Framework: A Simple Model of Institutional Choice}
+
+\textbf{Acemoglu \& Robinson's framework (simplified):}
+
+
+Suppose there are two groups in society: an \textbf{elite} $E$ and \textbf{citizens} $C$.
+
+The elite controls political institutions. It can choose between two types of economic institutions:
+\begin{itemize}
+\item \textbf{Inclusive institutions} $I$: secure property rights for all; total output $Y^I > Y^E$
+\item \textbf{Extractive institutions} $E$: property rights only for the elite; total output $Y^E$; elite extracts share $\mu$ of total output
+\end{itemize}
+
+
+The elite prefers extractive institutions if and only if:
+\[
+\mu \cdot Y^E > \text{Elite's share of } Y^I
+\]
+
+
+\textbf{Why can't citizens buy reform?}
+The elite cannot \emph{commit} to accepting a transfer from citizens in exchange for inclusive institutions.
+Once citizens make the transfer, the elite retains power and can simply expropriate them again.
+The commitment problem prevents the efficient deal.
+
+
+\alert{This is why institutional reform requires a change in power as well as a change in rules.}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Geography Instrument: What It Identifies}
+
+\textbf{Why is distance from the equator a valid instrument for institutions?}
+
+
+\textbf{Relevance:} latitude is strongly correlated with institutional quality today -- because it determined settler mortality, which determined settlement patterns, which determined the type of institutions imposed.
+
+
+\textbf{Exclusion restriction:} latitude should have no \emph{direct} effect on income today -- only through its historical effect on institutions.
+
+
+\textbf{Critique (Easterly \& Levine, 2003):} geography may be better understood as a theory of institutions (via settler mortality), not simply as an instrument. This blurs the line between the geography hypothesis and the institutions hypothesis.
+
+
+\textbf{RST's response:} even if settler mortality is a geographic determinant of institutions, the relevant question for policy is whether we can improve institutions. Geography is fixed; institutions are not. Understanding that geography shaped institutions does not mean institutions cannot be reformed.
+
+
+\alert{The debate about instruments reflects deep disagreement about whether development differences are amenable to policy intervention at all.}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Measuring Democracy: The Polity and V-Dem Approaches}
+
+\textbf{Two prominent approaches to measuring political institutions:}
+
+
+\textbf{Polity IV/V (now Polity5):}
+\begin{itemize}
+\item Covers 1800--present for most countries
+\item Scores countries on a $-10$ (hereditary autocracy) to $+10$ (consolidated democracy) scale
+\item Key dimensions: executive recruitment, constraints on the executive, political competition
+\item Widely used but criticised for being overly focused on formal electoral procedures
+\end{itemize}
+
+
+\textbf{Varieties of Democracy (V-Dem):}
+\begin{itemize}
+\item Much more granular: hundreds of individual indicators
+\item Distinguishes electoral, liberal, participatory, deliberative and egalitarian dimensions of democracy
+\item Aggregated from thousands of country experts' codings
+\item Captures both formal rules and their operation in practice
+\item Increasingly used in research because it separates out dimensions that Polity conflates
+\end{itemize}
+
+
+\alert{Why is the choice of measure important?}\\
+A country can score well on electoral democracy (has free elections) but poorly on liberal democracy (courts are not independent; press is not free). These distinctions are invisible in coarser measures but crucial for understanding institutional quality and its effects on development.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Washington Consensus: What It Was and Why It Struggled}
+
+\textbf{The Washington Consensus (Williamson, 1989) -- the standard reform package of the 1980s--90s:}
+
+
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+\begin{enumerate}
+\item Fiscal discipline
+\item Reorientation of public expenditure
+\item Tax reform
+\item Interest rate liberalisation
+\item Competitive exchange rate
+\item Trade liberalisation
+\item Liberalisation of FDI inflows
+\item Privatisation
+\item Deregulation
+\item Secure property rights
+\end{enumerate}
+\end{column}
+\begin{column}{0.40\textwidth}
+\small
+\textbf{The public choice critique:}\\[4pt]
+Each of these reforms takes away an instrument through which ruling elites redistributed rents to supporters.\\[4pt]
+Without changing \emph{why} those elites wanted rents in the first place, the reforms just shifted which instrument was used.\\[4pt]
+\alert{The see-saw effect at national scale.}
+\end{column}
+\end{columns}
+
+
+\textbf{Rodrik (2006):} "Goodbye Washington Consensus, Hello Washington Confusion?" -- the reforms were implemented without attention to the political equilibrium that sustained the pre-reform institutions. The reforms were insufficient, not incorrect.
+\end{frame}
+
+
+\begin{frame}{North Korea vs.\ South Korea: Data}
+
+\textbf{The Korea divergence in numbers:}
+
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Indicator} & \textbf{North Korea} & \textbf{South Korea} \\
+\midrule
+GDP per capita (PPP, 2023 est.) & $\sim$\$1,700 & $\sim$\$50,000 \\
+Life expectancy & $\sim$72 years & $\sim$84 years \\
+Mobile phone subscriptions/100 & $<$10 & $\sim$140 \\
+Electric power consumption & Very low & $\sim$10,000 kWh/capita \\
+HDI rank (approx.) & Not ranked & Top 20 globally \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\footnotesize Note: North Korean data are estimates from the CIA World Factbook and UN reports; official statistics are not published.
+
+
+\textbf{The night-lights satellite imagery comparison is visually dramatic:} South Korea is bright; North Korea, except for Pyongyang, is dark.\\
+This is one of the most compelling single images in development economics.
+\end{frame}
+
+
+\end{document}

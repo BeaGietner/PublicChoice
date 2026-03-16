@@ -1,0 +1,1268 @@
+\documentclass[10pt]{beamer}
+\usetheme{metropolis}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usetikzlibrary{arrows.meta, positioning, calc, shapes, fit, backgrounds, patterns}
+\definecolor{myTeal}{HTML}{23373b}
+\definecolor{myOrange}{HTML}{EB811B}
+\setbeamercolor{alerted text}{fg=myOrange}
+
+\title{Behavioural Economics}
+\subtitle{ECO1028 -- Politics Without Romance}
+\author{Beatriz Gietner\\
+\texttt{beatriz.gietner@dcu.ie}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Why Does This Course Cover Behavioural Economics?}
+
+\textbf{We are near the end of the course. Look at what we have built.}
+
+
+\begin{itemize}
+\item \textbf{Downs:} voters are rationally ignorant; not worth learning about politics
+\item \textbf{Median voter:} parties rationally converge on the pivotal voter's preferences
+\item \textbf{Political business cycles:} politicians rationally time fiscal policy around elections
+\item \textbf{Niskanen:} bureaucrats rationally maximise their agency's budget
+\item \textbf{Tiebout:} citizens rationally sort across jurisdictions by revealed preference
+\item \textbf{Olson, Tullock, Stigler:} interest groups rationally lobby; industries rationally capture regulators
+\end{itemize}
+
+
+Every single model runs on the same assumption: \alert{actors know what they want, process information correctly, and respond to incentives predictably.}
+
+
+\textbf{Today we ask:} what happens to all of this if that assumption is wrong - not randomly, but \emph{systematically} and \emph{predictably}?
+\end{frame}
+
+
+\begin{frame}{Three Connections Worth Keeping in Mind}
+
+\textbf{As we go through the lecture, watch for these threads:}
+
+
+\begin{enumerate}
+\item \textbf{Loss aversion may amplify Olson.} \\[3pt]
+\footnotesize Concentrated losers from a reform do not just have stronger \emph{incentives} to lobby. Behavioural evidence suggests that losses are often felt more sharply than equivalent gains. That psychological asymmetry can compound the organisational one.
+
+
+\item \textbf{Present bias explains why good long-run policy is politically impossible.} \\[3pt]
+\footnotesize Voters are present-biased, and so are politicians facing election cycles.
+Reforms that cost now and pay off in five years are doubly cursed: the costs are felt immediately, and both the electorate and the government discount the future too steeply. This shifts the interpretation of the political business cycle from pure opportunism to structural forces.
+
+
+\item \textbf{The hardest question: if citizens are biased, so are voters - so who corrects it?} \\[3pt]
+\footnotesize This is the capstone problem of the course.
+Public choice says governments fail because politicians are self-interested.
+Behavioural economics says we may need intervention because citizens are biased.
+But biased citizens elect politicians who \emph{exploit} those biases.
+We return to this at the end - and there is no clean answer.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Tension at the Heart of This Lecture}
+
+\begin{columns}[T]
+\begin{column}{0.47\textwidth}
+\textbf{\color{myTeal} Public Choice argument}\\[6pt]
+Governments fail.\\
+Politicians respond to incentives, not to the public good.\\
+Regulation gets captured.\\
+Intervention makes things worse.\\[6pt]
+\footnotesize \alert{Conclusion:} leave people alone to make their own choices.
+\end{column}
+\begin{column}{0.47\textwidth}
+\textbf{\color{myOrange} Behavioural argument}\\[6pt]
+Markets fail too.\\
+People are systematically biased.\\
+Firms exploit those biases profitably.\\
+Some intervention can improve welfare without coercion.\\[6pt]
+\footnotesize \alert{Conclusion:} design the choice environment more carefully.
+\end{column}
+\end{columns}
+
+\vspace{0.4cm}
+\textbf{Glaeser's (2006) objection:} governments are staffed by the same biased, present-biased, overconfident humans as everyone else - plus they face additional political distortions.
+Why would we expect them to correct citizen biases rather than exploit them?
+
+
+\alert{This is the unresolved tension we will carry through today's lecture.}
+There is no clean answer.
+The goal is to be able to articulate both sides precisely.
+\end{frame}
+
+
+\section{The Rational Agent: A Quick Recap}
+
+\begin{frame}[allowframebreaks]{The Character at the Centre of Economics}
+\textbf{Every model we have studied this semester contains the same character.}
+
+
+He is called \alert{\href{https://nicholasdecker.substack.com/}{homo economicus}} - economic man.
+
+
+He has some very convenient properties:
+\begin{itemize}
+\item He knows what he wants, and his preferences don't change depending on his mood
+\item He processes all available information correctly
+\item He makes plans and follows through on them - always
+\item He responds to incentives in predictable ways
+\item He is entirely self-interested
+\end{itemize}
+
+
+\alert{He is enormously useful.}
+The Olson model works. The Tullock model works. The Stigler model works.
+All of them run on this character.
+
+
+\textbf{Today's question:} what happens when we replace him with an actual human being?
+\end{frame}
+
+
+\begin{frame}{Where the Model Works - and Where It Doesn't}
+
+\textbf{The rational agent model works best when:}
+\begin{itemize}
+\item People make the same type of decision repeatedly - they learn from mistakes
+\item The stakes are high enough to pay attention
+\item The choice is simple and the information is clear
+\item[\footnotesize$\triangleright$] \footnotesize Buying coffee, haggling at a market, bidding on a stock
+\end{itemize}
+
+
+\textbf{It struggles when:}
+\begin{itemize}
+\item The decision is \alert{rare and high-stakes} - choosing a pension, buying a house
+\item The cost comes now but the benefit comes much later - or vice versa
+\item The relevant information is hidden or hard to process
+\item[\footnotesize$\triangleright$] \footnotesize Exactly the decisions that matter most in people's lives
+\end{itemize}
+
+
+\alert{Golden rule:} remember your assumptions.
+
+Evaluate the model by whether its simplifications affect the problem at hand, rather than by whether it is literally "true".
+\end{frame}
+
+
+\section{What is Behavioural Economics?}
+
+\begin{frame}{Before We Begin: Three Quick Questions}
+
+\textbf{Raise your hand if\ldots}
+
+
+\begin{enumerate}
+\item \ldots you have ever paid for a gym membership and not gone.
+
+
+\item \ldots you have ever told yourself "I'll start saving next month" - and then not done it.
+
+
+\item \ldots you have ever felt \emph{more} upset about losing \euro 20 than happy about finding \euro 20.
+\end{enumerate}
+
+
+\alert{If any of these apply to you, you are not irrational.}
+
+You are \textbf{predictably human} - and that is exactly what behavioural economics studies.
+\end{frame}
+
+
+\begin{frame}{What is Behavioural Economics?}
+
+\textbf{Standard economics} asks: given that people are rational, what will they do?
+
+
+\textbf{Behavioural economics} asks: given how people \emph{actually} think and decide, what will they do - and what should policy do about it?
+
+
+The field draws on \alert{psychology} to modify the assumptions of the rational agent model while keeping the framework intact.
+
+
+\textbf{The key word is \emph{predictable}.}
+In behavioural economics we identify \alert{systematic} patterns of deviation - the same mistakes, made by the same types of people, in the same types of situations.
+
+
+If the mistakes were random, they would cancel out.
+Because they are systematic, they matter for markets, institutions, and policy.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Key Definitions}
+\small
+\begin{itemize}
+\item \textbf{Behavioural economics:} the study of how psychological factors shape economic decisions - and what to do about it in policy design.
+\item \textbf{Bounded rationality:} the idea that people use simplified rules (heuristics) because thinking carefully is costly and time-consuming.
+\item \textbf{Heuristic:} a mental shortcut. Usually good enough; sometimes systematically wrong.
+\item \textbf{Cognitive bias:} a predictable pattern of error in judgement or decision-making.
+\item \textbf{Present bias:} the tendency to over-weight costs and benefits that happen \emph{now} relative to ones in the future.
+\item \textbf{Loss aversion:} the tendency to feel losses more strongly than equivalent gains.
+\item \textbf{Status quo bias:} the tendency to stick with whatever is already in place.
+\item \textbf{Nudge:} a change to the way choices are presented that predictably shifts behaviour, without removing options and without \emph{significantly} changing economic incentives.
+\item \textbf{Choice architecture:} the design of the environment in which decisions are made.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Three Ways People Deviate from the Standard Model}
+
+\textbf{We can organise the findings into three buckets:}
+
+
+\begin{enumerate}
+\item \textbf{Non-standard preferences} \\[3pt]
+\footnotesize People want things the rational agent model says they shouldn't want.
+They struggle to follow through on their own plans.
+They care about fairness, not just their own payoff.
+They feel losses more than gains.
+
+
+\item \textbf{Non-standard beliefs} \\[3pt]
+\footnotesize People hold \emph{systematically wrong} views about the world.
+They are overconfident about their own abilities.
+They see patterns in randomness.
+They assume tomorrow will feel just like today.
+
+
+\item \textbf{Non-standard decision-making} \\[3pt]
+\footnotesize Even with the right values and beliefs, people make predictable errors.
+They ignore information that isn't right in front of them.
+They are swayed by irrelevant factors - the order of options, what others are doing, whether they're in a good mood.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{What We Will Learn}
+\textbf{By the end of this lecture, you should be able to explain:}
+
+\begin{itemize}
+\item Why people \alert{under-save, over-eat, and overpay} - and why blaming individual weakness misses the point
+\item Why \alert{losing \euro 50 feels worse than finding \euro 50 feels good} - and what this implies for wages, contracts, and housing policy
+\item Why people are \alert{systematically overconfident} and how this shapes everything from mergers to financial crises
+\item Why the \alert{framing and presentation of a choice} can matter as much as the choice itself
+\item What \alert{nudges} are, why they work, and what the limits of "libertarian paternalism" are
+\end{itemize}
+
+
+\textbf{Core readings:}
+\begin{itemize}
+\item DellaVigna (2007), "Psychology and Economics: Evidence from the Field"
+\item Thaler \& Sunstein (2003), "Libertarian Paternalism"
+\end{itemize}
+\end{frame}
+
+\section{Non-Standard Preferences}
+
+\begin{frame}{The Problem of Self-Control}
+
+\textbf{Imagine it's Sunday evening.}
+
+
+You plan to go for a run on Monday morning, eat well, and start that assignment you've been putting off.
+
+
+Monday arrives. You sleep in. You eat cereal at noon. The assignment waits.
+
+
+\textbf{Irrationality? No, it is \alert{time inconsistency}.}
+
+
+Your Sunday-evening self and your Monday-morning self have \emph{genuinely different preferences}.
+The future always looks more disciplined than the present actually is.
+
+
+\alert{The rational agent model assumes these two selves are identical.}
+Behavioural economics says this is one of the most consequential mistakes the model makes.
+\end{frame}
+
+
+\begin{frame}{Present Bias: The Core Idea}
+
+\textbf{We all discount the future - that's normal and rational.}
+A reward next year is worth less to you than the same reward today (quasi-hyperbolic discounting).
+
+
+\textbf{Present bias is different.}
+It is an \emph{extra} over-weighting of the present - a special impatience that kicks in only when costs or benefits are \emph{right now}.
+
+
+\textbf{A simple illustration:}
+\begin{itemize}
+ \item Most people prefer \euro 100 today over \euro 110 in one week
+\item But most people also prefer \euro 110 in 6 weeks over \euro 100 in 5 weeks
+\item The delay is identical - one week - but the first feels much harder to wait
+\end{itemize}
+
+
+\alert{The present is special in a way that our plans don't account for.}
+
+
+\footnotesize For those interested in the formal model: see the Appendix for the $(\beta, \delta)$ framework.
+\end{frame}
+
+
+\begin{frame}{Two Types of Goods}
+
+Present bias has different consequences depending on what kind of good you're dealing with.
+
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{\color{myTeal} Investment goods}\\[4pt]
+Cost now, benefit later
+\begin{itemize}
+\item Going to the gym
+\item Saving for retirement
+\item Studying for exams
+\item Eating vegetables
+\end{itemize}
+
+\footnotesize Present bias makes us \emph{do less} of these than we intend to.
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{\color{myOrange} Leisure goods}\\[4pt]
+Pleasure now, cost later
+\begin{itemize}
+\item Junk food
+\item Credit card spending
+\item Doomscrolling at midnight
+\item Skipping lectures
+\end{itemize}
+
+\footnotesize Present bias makes us \emph{do more} of these than we plan to.
+\end{column}
+\end{columns}
+
+
+\alert{The gap between plans and actions is systematic and exploitable.}
+\end{frame}
+
+
+\begin{frame}{The Gym Story}
+
+\textbf{A gym near a large US university offered two contracts:}
+\begin{itemize}
+\item \textbf{Monthly membership:} flat \euro 80 fee, unlimited visits
+\item \textbf{Pay per visit:} \euro 10 each time
+\end{itemize}
+
+
+If you're rational, you only sign up for the monthly membership if you expect to go \textbf{at least 8 times}.
+
+
+\textbf{What did researchers find? (DellaVigna and Malmendier, 2006)}
+\begin{itemize}
+\item Members on monthly contracts attended on average \alert{4.8 times per month}
+\item Their effective cost per visit: \textbf{\euro 17} - almost double the pay-per-visit price
+\item Almost none of them cancelled
+\end{itemize}
+
+
+\textbf{Why don't they switch or cancel?}
+On the day they signed up, future gym visits felt certain.
+Each Monday, the run can always start "next Monday."
+Cancelling requires a phone call - \alert{which also gets put off}.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Deadline Story}
+
+\textbf{An experiment with MBA students at MIT (Ariely and Wertenbroch, 2002):}
+
+
+Students had three assignments to submit over a semester.
+\begin{itemize}
+\item \textbf{Group A:} could set their own deadlines (binding - lateness cost marks)
+\item \textbf{Group B:} all deadlines at the very end of semester
+\item \textbf{Group C:} evenly-spaced deadlines set by the instructor
+\end{itemize}
+
+
+\textbf{Rational prediction:} Group A should set all deadlines at the end - why constrain yourself?
+
+
+\textbf{What happened:}
+\begin{itemize}
+\item 68\% of Group A chose early deadlines - they \emph{wanted} to be constrained
+\item Group A did better than Group B (self-set deadlines help)
+\item Group C did best of all (external structure beats self-set structure)
+\end{itemize}
+
+
+\alert{People use rules, deadlines, and commitments as tools against their future selves.}
+This only makes sense if you know your future self will behave differently to your current self.
+\end{frame}
+
+
+\begin{frame}{The Pension Default Story (Madrian and Shea, 2001*)}
+
+\textbf{A large US company changed one thing about its pension scheme:}
+
+
+\begin{columns}[T]
+\begin{column}{0.45\textwidth}
+\textbf{Before:}\\
+Employees were not enrolled.\\
+To join: fill in a form.\\
+
+Participation rate: \alert{49\%}
+\end{column}
+\begin{column}{0.45\textwidth}
+\textbf{After:}\\
+Employees were automatically enrolled.\\
+To leave: fill in a form.\\
+
+Participation rate: \alert{86\%}
+\end{column}
+\end{columns}
+
+
+The form required was \emph{identical}.
+The financial incentives were \emph{unchanged}.
+The only difference was which option required action.
+
+
+\alert{The rational agent model predicts this should not matter.}
+But it does matter - a lot! - because inaction is the path of least resistance when you're present-biased and can always start "next month."
+
+
+\footnotesize Ireland's 2023 Automatic Enrolment Act is built on exactly this finding.\\
+* This is one of the most influential papers in applied economics of the last 25 years.
+\end{frame}
+
+
+\begin{frame}{Discussion: Who Is Responsible?}
+
+\textbf{You now know that:}
+\begin{itemize}
+\item People systematically under-save for retirement
+\item They over-commit to gym memberships they won't use
+\item They procrastinate on tasks they genuinely want to complete
+\end{itemize}
+
+
+\textbf{Three positions - which do you find most convincing?}
+
+
+\begin{enumerate}
+\item \textbf{Personal responsibility:} these are individual choices and the state has no business intervening
+\item \textbf{Soft intervention:} change the default, but let people opt out freely - libertarian paternalism
+\item \textbf{Hard intervention:} mandatory pension contributions, sugar taxes - self-control problems create a case for coercion
+\end{enumerate}
+
+
+\alert{Think about:} does your answer change if the person experiencing the self-control problem is poor?
+Or elderly?
+Or a teenager?
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Loss Aversion: Losses Loom Larger Than Gains}
+
+\textbf{Try this thought experiment:}
+
+
+I flip a fair coin.
+\begin{itemize}
+\item Tails: you lose \euro 50
+\item Heads: you win \euro X
+\end{itemize}
+
+
+\textbf{What does X have to be for you to take the bet?}
+
+
+Most people say \euro 100--150.
+Some say more.
+Almost no one says \euro 50 - even though that would make it a fair bet with positive expected value.
+
+
+\alert{This is loss aversion.}
+The pain of losing \euro 50 is often felt more strongly than the pleasure of gaining \euro 50.
+In many experimental settings, people behave as if losses carry roughly \textbf{twice} the weight of equivalent gains, though estimates vary across designs and settings.
+
+
+\footnotesize The core point is qualitative rather than mechanical: losses and gains are not treated symmetrically.
+\end{frame}
+
+
+\begin{frame}{Reference Points: It Depends Where You Started}
+
+\textbf{Loss aversion implies that how you \emph{frame} an outcome matters as much as the outcome itself.}
+
+
+\textbf{Same economic reality, different framing:}
+
+\begin{itemize}
+\item "You will receive a \euro 1,000 bonus" vs. "Your bonus has been cut from \euro 2,000 to \euro 1,000"
+\item "This product contains 10\% fat" vs. "This product is 90\% fat-free"
+\item "A 5\% pay rise when inflation is 7\%" vs. "A 2\% pay cut"
+\end{itemize}
+
+
+\textbf{The reference point} is whatever you treat as the baseline for comparison.
+  Gains and losses are evaluated relative to that point rather than to absolute wealth.
+
+
+\alert{The standard model says only final outcomes matter.}
+Loss aversion says the path to those outcomes matters enormously.
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Loss Aversion in the Real World: The Mug Experiment}
+
+\textbf{A classic experiment (Kahneman, Knetsch and Thaler, 1990):}
+
+
+Researchers randomly give half a group of students a coffee mug.
+They then ask:
+\begin{itemize}
+\item Sellers (those with the mug): what is the minimum price you would accept to sell it?
+\item Buyers (those without): what is the maximum price you would pay to buy it?
+\end{itemize}
+
+
+\textbf{Standard prediction:} sellers and buyers should value the mug roughly the same - it's the same mug.
+
+
+\textbf{What happened:}
+\begin{itemize}
+\item Sellers: median asking price \textbf{\$5.75}
+\item Buyers: median willingness to pay \textbf{\$2.25}
+\item Ratio: roughly \alert{2.5 to 1}
+\end{itemize}
+
+
+The act of \emph{owning} something changes how much you value it.
+Giving it up feels like a loss. Loss aversion makes you demand more to part with it than you would ever have paid to get it.
+\end{frame}
+
+
+\begin{frame}{Loss Aversion: The Value Function}
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[
+axis lines=center,
+xlabel={Outcome relative to reference point},
+ylabel={Subjective value},
+xmin=-4, xmax=4,
+ymin=-5, ymax=3.5,
+xtick=\empty,
+ytick=\empty,
+xlabel style={at={(axis cs:4,0)}, anchor=west, font=\small},
+ylabel style={at={(axis cs:0,3.5)}, anchor=south, font=\small},
+width=9cm, height=6cm,
+]
+\addplot[domain=0:4, thick, color=myTeal, samples=80]
+{2.5*x^0.65};
+\addplot[domain=-4:0, thick, color=myOrange, samples=80]
+{-5*(-x)^0.65};
+\node at (axis cs:2.5, 2.8) [font=\small, color=myTeal] {Gains};
+\node at (axis cs:-2.5,-4.2) [font=\small, color=myOrange] {Losses (steeper)};
+\draw[dashed, gray] (axis cs:-1,0) -- (axis cs:-1,-2.3);
+\draw[dashed, gray] (axis cs:1,0) -- (axis cs:1,1.9);
+\node at (axis cs:-1,-2.6) [font=\tiny] {$-x$};
+\node at (axis cs:1,2.1) [font=\tiny] {$+x$};
+\draw[<->, myOrange, thick] (axis cs:-0.15,-2.3) -- (axis cs:-0.15,0);
+\draw[<->, myTeal, thick] (axis cs:0.15,0) -- (axis cs:0.15,1.9);
+\node at (axis cs:0.7,-1.2) [font=\tiny, myOrange] {$\lambda > 1$};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\vspace{-0.3cm}
+\footnotesize Illustrative prospect-theory value function. Many applied papers use loss-aversion parameters around 2, but the exact value is not universal. The losses side is steeper than the gains side - that is the $\lambda > 1$ parameter. And the function is concave in the gains region — we are risk-averse over gains — but convex in the loss region — we are risk-seeking over losses. Both of these come from Kahneman and Tversky's 1979 Prospect Theory paper.
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Field Evidence: The Endowment Effect}
+\textbf{Kahneman, Knetsch \& Thaler (1990):}
+
+\begin{itemize}
+\item Subjects randomly assigned a coffee mug
+\item \textbf{WTA} (sellers): median \$5.75
+\item \textbf{WTP} (buyers): median \$2.25
+\item Standard theory: WTA $\approx$ WTP
+\item \alert{Observed ratio:} WTA $\approx 2.5 \times$ WTP
+\end{itemize}
+
+
+\textbf{List (2003) - Field evidence with sports memorabilia:}
+\begin{itemize}
+\item Inexperienced traders: strong endowment effect (switched only 6.8\% of the time)
+\item Experienced traders: much weaker endowment effect (switched 46.7\%)
+\end{itemize}
+
+
+\alert{Careful interpretation:} market experience appears to attenuate the \emph{observed} endowment effect. Whether that reflects weaker loss aversion, different reference points, learning, or selection is less clear.
+List is careful about why: is it that experienced traders have weaker loss aversion? Or different reference points? Or selection — the people who become experienced traders are those who already trade more easily? The data do not cleanly distinguish these.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Field Evidence: Target Earnings in Labour Supply}
+\textbf{Camerer et al.\ (1997) - New York City Taxi Drivers:}
+
+\begin{itemize}
+\item On high-wage days (rainy days, big events), the standard model predicts \alert{more} hours
+\item One interpretation of the data is that some drivers behave as if they have a \textbf{daily earnings target}
+\item On high-demand days, some drivers appear to stop earlier once that target is reached
+\item This produces estimates that are hard to reconcile with the standard intertemporal labour-supply model
+\end{itemize}
+
+
+\textbf{Fehr \& Goette (2007) - Bike Messengers:}
+\begin{itemize}
+\item Randomly assigned 25\% wage increase for one month
+\item Messengers signed up for more shifts (consistent with both models)
+\item Within shifts, effort responses are consistent with reference-dependent preferences
+\end{itemize}
+
+
+\footnotesize Takeaway: there is suggestive evidence for target earnings and reference dependence in labour supply, but the magnitude and generality of the effect remain debated.
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Loss Aversion in Wages: Implications for Labour Markets}
+\textbf{Kahneman, Knetsch \& Thaler (1986) - Survey evidence:}
+
+\begin{itemize}
+\item 62\% of respondents find a \textbf{7\% nominal wage cut} unfair in zero inflation
+\item But only 22\% find a \textbf{5\% nominal rise} unfair when inflation is 12\%
+\item In both cases, real wages fall by $\approx$ 7\% - but \alert{framing as a loss matters}
+\end{itemize}
+
+
+\textbf{Card \& Hyslop (1997) - Wages data:}
+\begin{itemize}
+\item Distribution of year-on-year wage changes has a \alert{spike at zero} and a deficit just below
+\item Employers often keep wages nominally flat rather than cutting them directly
+\item This pattern is consistent with workers resisting nominal wage cuts more strongly than equivalent real wage cuts delivered through inflation
+\end{itemize}
+
+
+\alert{Implication:} downward nominal wage rigidity may partly reflect loss aversion alongside institutional factors such as bargaining, contracts, and norms. That can matter for unemployment and recession dynamics.
+\end{frame}
+
+
+\begin{frame}{Social Preferences}
+\textbf{The standard model assumes pure self-interest.}
+A large body of evidence shows that people also care about fairness, reciprocity, and the welfare of others.
+
+
+\textbf{Dictator Game (Forsythe et al., 1994):}
+\begin{itemize}
+\item One player allocates \$10 between themselves and a stranger
+\item Standard prediction: keep all \$10
+\item \alert{Observed:} 60\% transfer a positive amount; average transfer $\approx$ \$2
+\end{itemize}
+
+
+\textbf{Gift Exchange in the Workplace (Gneezy \& List, 2006):}
+\begin{itemize}
+\item Workers unexpectedly told their wage was raised from \$12 to \$20/hour
+\item Initial productivity jumps: \textbf{+20\% in hour 1}
+\item But the effect largely fades after 2 hours
+\item \alert{Key finding:} the gift exchange has an emotional component that dissipates
+\end{itemize}
+\end{frame}
+
+
+
+\section{Non-Standard Beliefs}
+
+\begin{frame}{Overconfidence}
+\textbf{Two forms of overconfidence with strong field evidence:}
+
+
+\begin{enumerate}
+\item \textbf{Overconfidence about own ability}
+\begin{itemize}
+\item Svenson (1981): 93\% of subjects rate themselves as above-median drivers
+\item Camerer \& Lovallo (1999): excess entry in business competitions where winners are determined by skill
+\end{itemize}
+
+
+\item \textbf{Overconfidence about precision of information}
+\begin{itemize}
+\item Alpert \& Raiffa (1982): 98\% confidence intervals contain the true answer only 60\% of the time
+\item \alert{Odean (1999)}: individual investors trade too much; stocks sold outperform stocks bought by $\approx$ 3\% over the next year
+\item \alert{Malmendier \& Tate}: overconfident CEOs are 55\% more likely to pursue acquisitions; they destroy shareholder value
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{The Law of Small Numbers and Gambler's Fallacy}
+\textbf{Tversky \& Kahneman's representativeness heuristic:}
+
+People expect small samples to look like large-sample population distributions.
+
+
+\textbf{Two related errors:}
+
+\begin{itemize}
+\item \textbf{Gambler's fallacy:} after a sequence of Heads, people expect Tails more.
+In a lottery with recent winning numbers, bettors avoid those numbers - \alert{reducing their expected payout} in a pari-mutuel system (Terrell, 1994: winners pay 33\% more if the number won in the last week)
+
+
+\item \textbf{Overinference / Hot hand fallacy:} after observing a sequence of good outcomes, people over-update that the underlying process is "trending"
+- 401(k) investors allocate much more to employer stock after recent good performance, even though past returns predict nothing (Benartzi, 2001)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Projection Bias}
+\textbf{People over-project current tastes onto future preferences.}
+
+
+Loewenstein, O'Donoghue \& Rabin (2003) model this as:
+\[
+\hat{u}(c, s) = (1-\alpha)\,u(c, s) + \alpha\,u(c, s_0)
+\]
+where $s_0$ is the current state and $\alpha \in [0,1]$ measures the degree of projection.
+
+
+\textbf{Classic example (Read \& van Leeuwen, 1998):}
+\begin{itemize}
+\item Workers asked to choose a snack for delivery next week
+\item Asked when \textbf{hungry}: 78\% chose unhealthy snack
+\item Asked when \textbf{satiated}: 42\% chose unhealthy snack
+\item Current hunger state is (incorrectly) projected onto future preferences
+\end{itemize}
+
+
+\textbf{Field evidence (Conlin, O'Donoghue \& Vogelsang):}
+Cold-weather clothing ordered on colder days is \alert{returned more often} - buyers over-predict how much they will value it.
+Structural estimate: $\hat\alpha \approx 0.5$.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Limited Attention}
+\textbf{People don't process all available information equally.}
+
+What is visible and salient gets attention; what is buried in small print,
+separated onto a different line, or announced on a quiet Friday does not.
+The same total cost can feel very different depending on how it is presented.
+
+\vspace{0.2cm}
+\textbf{Key field studies:}
+\begin{itemize}
+\item \textbf{eBay shipping costs} (Hossain \& Morgan, 2006): shifting \$3.99
+from the bid price to the shipping cost - same total price - raises seller
+revenue by \$1.79. Buyers anchor on the headline number and under-react to the rest.
+
+\item \textbf{Non-transparent taxes} (Chetty et al., 2007): when a 7.4\% sales
+tax is printed on the price tag rather than added at the till, demand falls by
+8.8\%. Out of sight genuinely means out of mind.
+
+\item \textbf{Friday earnings announcements}: stocks announced on Fridays show
+delayed price adjustment. Firms learn to time bad news for low-attention days.
+\end{itemize}
+
+\alert{Policy implication:} making information harder to ignore is itself a policy
+lever. Mandatory calorie labelling, plain tobacco packaging, and price comparison
+websites all work by bringing hidden costs into view - no ban required.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Menu Effects and Choice Overload}
+
+\textbf{People do not always process every option carefully.}
+
+\begin{itemize}
+\item When the choice set is large, people may rely on simple cues such as order, salience, defaults, or what stands out visually
+\item More options can improve welfare in principle, but in practice they can also make decisions harder
+\item Small design features can therefore shift choices even when the available options stay the same
+\end{itemize}
+
+
+\textbf{Examples from the literature:}
+\begin{itemize}
+\item \textbf{Ballot order effects:} candidates listed earlier can receive a modest advantage, though the size of the effect varies across settings
+\item \textbf{Supermarkets and restaurants:} products placed at eye level or made more salient tend to be chosen more often
+\item \textbf{Retirement plans:} too many fund options can discourage participation or push people towards simplified decision rules
+\end{itemize}
+
+
+\alert{Takeaway:} choices are shaped not only by preferences and prices, but also by how options are organised and presented.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Social Pressure and Persuasion}
+\textbf{People deviate from their own preferences under social pressure and persuasion:}
+
+\textbf{Classic lab evidence:}
+\begin{itemize}
+  \item \textbf{Asch (1951):} 1 in 3 subjects give the \emph{wrong} answer about line length when confederates respond unanimously. Even when the correct answer is clear, social consensus overrides it.
+
+\item \textbf{Milgram (1963):} 62\% of subjects administer apparently dangerous
+electric shocks when instructed to by an authority figure.
+\end{itemize}
+
+\textbf{Field evidence:}
+\begin{itemize}
+\item \textbf{Soccer referees} (Garicano et al., 2005): referees award twice
+as much extra time when the home team is trailing - crowd pressure, not
+the clock, is doing the work.
+
+\item \textbf{Fox News effect} (DellaVigna \& Kaplan, 2007): towns where Fox
+News launched saw a half-percentage-point rise in Republican vote share.
+
+\item \textbf{Workplace peers} (Mas \& Moretti, 2006): when a high-productivity
+worker joins a shift, their colleagues measurably speed up - even without
+direct interaction or any financial incentive to do so. Effort is partly social.
+\end{itemize}
+\end{frame}
+
+
+\section{Nudge Theory and Libertarian Paternalism}
+
+\begin{frame}{The Key Problem: Should We Do Anything About This?}
+\textbf{Two extreme responses to the evidence:}
+
+
+\begin{itemize}
+\item \textbf{Libertarian purist:} "People have revealed preferences; we should respect them even if they look irrational from the outside."
+
+
+\item \textbf{Hard paternalist:} "People systematically make mistakes; the state should correct their choices by mandate, ban, or tax."
+\end{itemize}
+
+
+\textbf{Thaler \& Sunstein's (2003, 2008) proposal:} a \alert{third way}.
+
+
+The key observation: \emph{any} choice environment has a design.
+Someone must decide where the fruit goes in the cafeteria.
+Someone must decide what the default pension option is.
+\alert{Neutrality is impossible - the question is only how to design the environment.}
+\end{frame}
+
+
+\begin{frame}{Libertarian Paternalism}
+\textbf{Thaler \& Sunstein define two concepts:}
+
+
+\begin{itemize}
+\item \textbf{Paternalistic:} a policy is paternalistic if it is chosen with the goal of influencing choices in a way that makes people better off - as measured, as objectively as possible, by their own welfare
+\item \textbf{Libertarian:} the intervention preserves freedom of choice; no options are forbidden; opting out is cheap
+\end{itemize}
+
+
+\alert{Libertarian paternalism:} design the choice architecture to promote welfare without coercion.
+
+
+\textbf{Key claim (Thaler \& Sunstein):}
+Anti-paternalism is incoherent as an absolute position.
+A cafeteria must arrange food \emph{somehow}.
+The choice of "no default" is itself a default.
+The relevant question is: \emph{which} design promotes welfare?
+\end{frame}
+
+
+\begin{frame}{What Is a Nudge?}
+
+\begin{block}{Definition (Thaler \& Sunstein, 2008)}
+"A nudge \ldots is any aspect of the choice architecture that alters people's behaviour in a predictable way without forbidding any options or significantly changing their economic incentives. To count as a mere nudge, the intervention must be easy and cheap to avoid."
+\end{block}
+
+
+\textbf{Examples:}
+\begin{itemize}
+\item Putting fruit at eye level in a cafeteria (nudge) vs.\ banning desserts (not a nudge)
+\item Automatic pension enrolment with opt-out (nudge) vs.\ mandatory contributions (not a nudge)
+\item Placing a staircase in a prominent position to encourage exercise
+\item Printing "This is what your neighbours pay" on energy bills
+\end{itemize}
+
+
+\alert{Key question:} if people can easily opt out, why does the default matter so much?
+Answer: present bias, inertia, and status quo bias make defaults "sticky."
+\end{frame}
+
+
+\begin{frame}{Save More Tomorrow (SMarT)}
+\textbf{Thaler \& Benartzi (2004) - the flagship example of libertarian paternalism in action:}
+
+
+\begin{itemize}
+\item Employees agree \emph{in advance} to increase their pension contribution every time they get a raise
+\item No one is forced to participate; opt-out is available at any time
+\item The design is tailored to present-biased preferences:
+\begin{itemize}
+\item Commitment is made \emph{in the future} (no immediate cost for the present self)
+\item Increases are tied to raises (no nominal income reduction - exploits nominal loss aversion)
+\end{itemize}
+\item \textbf{Results:} average contribution rate rose from 3.5\% to 13.6\% in four years
+\item Very few participants opted out
+\end{itemize}
+
+
+\alert{The 2006 Pension Protection Act (US)} gave statutory encouragement to plans designed along these lines.
+\textbf{Ireland:} the 2023 Auto-Enrolment Retirement Savings Act follows the same logic.
+\end{frame}
+
+
+\begin{frame}{Evaluating Nudges: The Toolbox}
+\textbf{Thaler \& Sunstein suggest three criteria for choosing among possible defaults:}
+
+
+\begin{enumerate}
+\item \textbf{Market mimicking:} choose the option the majority would choose if forced to make an explicit decision
+
+\item \textbf{Forced choice:} require an active decision when the stakes are high and preferences are clear - eliminate the default
+
+\item \textbf{Minimise opt-outs:} choose the option that most people are content to accept - ex post validation of welfare effects
+\end{enumerate}
+
+
+\alert{But nudges are not a free lunch:}
+\begin{itemize}
+\item Who decides what counts as welfare-enhancing?
+\item Nudges designed by governments can entrench paternalistic preferences
+\item Firms can use the same architecture to \emph{exploit} consumers (dark patterns, auto-renewal traps)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Criticisms of Libertarian Paternalism}
+\textbf{The libertarian paternalism agenda has been criticised from multiple directions:}
+
+
+\begin{itemize}
+\item \textbf{Glaeser (2006):} governments face the same cognitive biases as individuals, plus additional political economy distortions. Politicians nudge toward re-election, not welfare.
+
+
+\item \textbf{Rizzo \& Whitman:} there is no stable "true preference" to recover. Biases interact; which one should policy correct?
+
+
+\item \textbf{Firms as nudgers:} the same tools used to raise pension savings can be used to keep people subscribed to services they never use. Dark patterns are "reverse nudges."
+
+
+\item \textbf{Distributional concerns:} nudges are not equally effective across all groups. More cognitively burdened individuals (poverty, stress) may be more susceptible to manipulation.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{How Do Firms Respond to Behavioural Biases?}
+\textbf{DellaVigna \& Malmendier (2004) - Behavioural Industrial Organisation:}
+
+Profit-maximising firms facing present-biased consumers set prices strategically:
+\begin{itemize}
+\item \textbf{Investment goods} (gym): price \emph{below} marginal cost per visit (zero); profit via the lump-sum fee
+\item \textbf{Leisure goods} (credit cards): price \emph{above} marginal cost post-teaser; profit from naive consumers who underestimate future borrowing
+\item \textbf{Gambling:} cheap accommodation and buffets (reduce upfront cost of getting to the casino)
+\end{itemize}
+
+
+\alert{Armstrong \& Huck (2010) - Are firms better at this than consumers?}
+\begin{itemize}
+\item Firms \emph{may} be less biased (repeated decisions, market selection, consultants)
+\item But managers also have biases - overconfidence, short-termism, status-seeking
+\item Competition does not always eliminate exploitation of biased consumers
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Behavioural Economics in an Irish Context}
+\textbf{Where do we see these ideas in Irish policy?}
+
+
+\begin{enumerate}
+\item \textbf{Auto-Enrolment Pensions (2023 Act):}
+Ireland had one of the lowest voluntary pension coverage rates in the EU.
+Automatic enrolment with opt-out directly applies Madrian \& Shea and the SMarT logic.
+
+
+\item \textbf{Sugar-Sweetened Drinks Tax (2018):}
+raises the immediate price of a leisure good.
+A blunter instrument than a nudge, but motivated by the same evidence on present bias and projection bias about future health.
+
+
+\item \textbf{Plain packaging and calorie labelling:} making information harder to ignore is itself a policy lever. Mandatory calorie labelling, plain tobacco packaging, and price comparison websites all work by bringing hidden costs into view - no ban is required.
+
+
+\item \textbf{Rental market regulation:}
+reference point effects suggest tenants experience rent increases as losses, creating political pressure asymmetric to equivalent gains. This partly explains the politics of rent caps.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Summary: What Does Behavioural Economics Tell Public Choice?}
+\textbf{Four big takeaways for this course:}
+
+
+\begin{enumerate}
+\item \textbf{Voters are not homo economicus.}
+Limited attention, social pressure, and loss framing shape political behaviour in predictable ways - politicians and lobbyists know this.
+
+
+\item \textbf{Institutions shape outcomes even when people can opt out.}
+Defaults matter. The political fights over pension defaults, benefit take-up, and voter registration are fights over choice architecture.
+
+
+\item \textbf{The market does not always correct bias.}
+Firms often \emph{amplify} biases when it is profitable to do so - teaser rates, gym contracts, auto-renewal.
+
+
+\item \textbf{Paternalism is not binary.}
+The Thaler--Sunstein framework replaces a false choice (regulate vs.\ don't) with a design question: what choice architecture best serves welfare while preserving freedom?
+\end{enumerate}
+\end{frame}
+
+
+
+\section*{Further Reading}
+
+\begin{frame}[allowframebreaks]{Foundational Papers}
+\footnotesize
+\begin{enumerate}
+\item Kahneman, D. \& Tversky, A. (1979). "Prospect Theory: An Analysis of Decision under Risk." \emph{Econometrica}, 47(2).
+\item Tversky, A. \& Kahneman, D. (1992). "Advances in Prospect Theory: Cumulative Representation of Uncertainty." \emph{Journal of Risk and Uncertainty}, 5(4).
+\item Kahneman, D., Knetsch, J. \& Thaler, R. (1990). "Experimental Tests of the Endowment Effect and the Coase Theorem." \emph{JPE}, 98(6).
+\item Kahneman, D., Knetsch, J. \& Thaler, R. (1986). "Fairness as a Constraint on Profit Seeking." \emph{AER}, 76(4).
+\item Thaler, R. (1981). "Some Empirical Evidence on Dynamic Inconsistency." \emph{Economics Letters}.
+\item Laibson, D. (1997). "Golden Eggs and Hyperbolic Discounting." \emph{QJE}, 112(2).
+\item O'Donoghue, T. \& Rabin, M. (1999). "Doing It Now or Later." \emph{AER}, 89(1).
+\item Loewenstein, G., O'Donoghue, T. \& Rabin, M. (2003). "Projection Bias in Predicting Future Utility." \emph{QJE}, 118(4).
+\item Madrian, B. \& Shea, D. (2001). "The Power of Suggestion: Inertia in 401(k) Participation." \emph{QJE}, 116(4).
+\item Thaler, R. \& Sunstein, C. (2003). "Libertarian Paternalism." \emph{AER P\&P}, 93(2).
+\item DellaVigna, S. (2007). "Psychology and Economics: Evidence from the Field." \emph{JEL}, 45(2).
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Field Evidence}
+\footnotesize
+\begin{enumerate}
+\item Svenson, O. (1981). "Are We All Less Risky and More Skilful than Our Fellow Drivers?" \emph{Acta Psychologica}, 47(2).
+\item Alpert, M. \& Raiffa, H. (1982). "A Progress Report on the Training of Probability Assessors." In \emph{Judgment Under Uncertainty: Heuristics and Biases}. Cambridge UP.
+\item Forsythe, R. et al.\ (1994). "Fairness in Simple Bargaining Experiments." \emph{Games and Economic Behavior}, 6(3).
+\item Ariely, D. \& Wertenbroch, K. (2002). "Procrastination, Deadlines, and Performance." \emph{Psychological Science}, 13(3).
+\item Camerer, C. et al.\ (1997). "Labor Supply of New York City Cab Drivers." \emph{QJE}, 112(2).
+\item Terrell, D. (1994). "A Test of the Gambler's Fallacy: Evidence from Pari-Mutuel Games." \emph{Journal of Risk and Uncertainty}, 8(3).
+\item Odean, T. (1999). "Do Investors Trade Too Much?" \emph{AER}, 89(5).
+\item Malmendier, U. \& Tate, G. (2005). "CEO Overconfidence and Corporate Investment." \emph{Journal of Finance}, 60(6).
+\item List, J. (2003). "Does Market Experience Eliminate Market Anomalies?" \emph{QJE}, 118(1).
+\item Read, D. \& van Leeuwen, B. (1998). "Predicting Hunger: The Effects of Appetite and Delay on Choice." \emph{Organizational Behavior and Human Decision Processes}, 76(2).
+\item Conlin, M., O'Donoghue, T. \& Vogelsang, T. (2007). "Projection Bias in Catalog Orders." \emph{AER}, 97(4).
+\item Fehr, E. \& Goette, L. (2007). "Do Workers Work More if Wages Are High?" \emph{AER}, 97(1).
+\item Card, D. \& Hyslop, D. (1997). "Does Inflation Grease the Wheels of the Labor Market?" In \emph{Reducing Inflation}. NBER/University of Chicago Press.
+\item Gneezy, U. \& List, J. (2006). "Putting Behavioral Economics to Work." \emph{Econometrica}, 74(5).
+\item Hossain, T. \& Morgan, J. (2006). "\ldots Plus Shipping and Handling." \emph{Advances in Economic Analysis \& Policy}, 6(2).
+\item Chetty, R., Looney, A. \& Kroft, K. (2009). "Salience and Taxation: Theory and Evidence." \emph{AER}, 99(4).
+\item Iyengar, S., Huberman, G. \& Jiang, W. (2004). "How Much Choice Is Too Much?" In \emph{Pension Design and Structure}. Oxford UP.
+\item Ho, D. \& Imai, K. (2008). "Estimating Causal Effects of Ballot Order from a Randomized Natural Experiment." \emph{Public Opinion Quarterly}, 72(2).
+\item Garicano, L., Palacios-Huerta, I. \& Prendergast, C. (2005). "Favoritism Under Social Pressure." \emph{Review of Economics and Statistics}, 87(2).
+\item DellaVigna, S. \& Kaplan, E. (2007). "The Fox News Effect." \emph{QJE}, 122(3).
+\item Mas, A. \& Moretti, E. (2009). "Peers at Work." \emph{AER}, 99(1).
+\item Benartzi, S. (2001). "Excessive Extrapolation and the Allocation of 401(k) Accounts to Company Stock." \emph{Journal of Finance}, 56(5).
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{On Nudges, Firms, and Policy Design}
+\footnotesize
+\begin{enumerate}
+\item Thaler, R. \& Benartzi, S. (2004). "Save More Tomorrow." \emph{JPE}, 112(S1).
+\item Thaler, R. \& Sunstein, C. (2008). \emph{Nudge}. Yale University Press.
+\item Glaeser, E. (2006). "Paternalism and Psychology." \emph{University of Chicago Law Review}, 73(1).
+\item Camerer, C. et al.\ (2003). "Regulation for Conservatives: Asymmetric Paternalism." \emph{UPenn Law Review}, 151(3).
+\item DellaVigna, S. \& Malmendier, U. (2004). "Contract Design and Self-Control." \emph{QJE}, 119(2).
+\item DellaVigna, S. \& Malmendier, U. (2006). "Paying Not to Go to the Gym." \emph{AER}, 96(3).
+\item Gabaix, X. \& Laibson, D. (2006). "Shrouded Attributes, Consumer Myopia, and Information Suppression." \emph{QJE}, 121(2).
+\item Armstrong, M. \& Huck, S. (2010). "Behavioral Economics as Applied to Firms: A Primer." \emph{Competition Policy International}, 6(1).
+\item Benartzi, S. \& Thaler, R. (1995). "Myopic Loss Aversion and the Equity Premium Puzzle." \emph{QJE}, 110(1).
+\item Benartzi, S. \& Thaler, R. (2001). "Naive Diversification Strategies in Defined Contribution Savings Plans." \emph{AER}, 91(1).
+\item Camerer, C. \& Lovallo, D. (1999). "Overconfidence and Excess Entry." \emph{AER}, 89(1).
+\item Haigh, M. \& List, J. (2005). "Do Professional Traders Exhibit Myopic Loss Aversion?" \emph{Journal of Finance}, 60(1).
+\item Laibson, D. et al.\ (2007). "Estimating Discount Functions with Consumption Choices over the Lifecycle." NBER Working Paper 13314.
+\item Mehra, R. \& Prescott, E. (1985). "The Equity Premium: A Puzzle." \emph{Journal of Monetary Economics}, 15(2).
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Irish and European Policy Context}
+\footnotesize
+\begin{enumerate}
+\item OECD (2017). \emph{Behavioural Insights and Public Policy: Lessons from Around the World}. OECD Publishing.
+\item Houses of the Oireachtas (2023). \emph{Automatic Enrolment Retirement Savings System Act}.
+\item Revenue Commissioners / ESRI (2018). \emph{The Sugar-Sweetened Drinks Tax: First-Year Evidence}. ESRI Working Paper.
+\item DETE (2022). \emph{Consumer Protection in Digital Markets: Discussion Paper}. Dept of Enterprise.
+\item Lunn, P. (2014). \emph{Regulatory Policy and Behavioural Economics}. OECD. (Pete Lunn is at the ESRI - directly relevant to Irish context)
+\end{enumerate}
+\end{frame}
+
+\section*{Cultural Resources}
+
+\begin{frame}{Films and Documentaries}
+\textbf{Behavioural Economics in the Wild:}
+\begin{itemize}
+\item \textbf{The Big Short} (2015) - overconfidence, herding, and limited attention in financial markets; the "Jenga" scene is practically a seminar in behavioural finance
+\item \textbf{Supersize Me} (2004) - present bias, projection bias, and the food industry's exploitation of both
+\item \textbf{Inside Job} (2010) - overconfidence, regulatory capture, and what happens when rational institutions interact with biased markets
+\item \textbf{Parasite} (2019) - framing, reference dependence, and the psychology of relative deprivation
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Books for General Audience}
+\begin{itemize}
+\item Richard Thaler \& Cass Sunstein - \emph{Nudge} (2008, updated 2021) - the manifesto
+\item Daniel Kahneman - \emph{Thinking, Fast and Slow} (2011) - the most accessible synthesis of the cognitive bias literature; written by one of the architects
+\item Dan Ariely - \emph{Predictably Irrational} (2008) - engaging field experiments on irrationality; some replication caveats apply
+\item Richard Thaler - \emph{Misbehaving} (2015) - a memoir of the behavioural economics revolution; unusually candid
+\item Michael Lewis - \emph{The Undoing Project} (2016) - the story of Kahneman and Tversky's collaboration; reads like a novel
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Podcasts and Online Resources}
+\textbf{Behavioural Insights in Practice:}
+\begin{itemize}
+\item \textbf{Freakonomics Radio} - "How to Be More Productive" and multiple episodes on nudging
+\item \textbf{EconTalk} - episodes with Thaler, Sunstein, and List
+\item \textbf{Planet Money} - "The Troubled Bridge Over Water" and episodes on defaults and savings
+\item \textbf{The Nudge Podcast} - dedicated to applied behavioural insights
+\end{itemize}
+
+
+\textbf{Data and Evidence:}
+\begin{itemize}
+\item \textbf{ESRI Behavioural Research Unit} (\texttt{esri.ie}) - Irish applied work by Pete Lunn's team
+\item \textbf{ideas42.org} - applied behavioural design in development contexts
+\item \textbf{BIT (Behavioural Insights Team)} - the original UK "nudge unit": case studies and reports
+\end{itemize}
+\end{frame}
+
+
+
+\appendix
+\section*{Backup Slides}
+
+\begin{frame}[allowframebreaks]{The $(\beta, \delta)$ Model of Present Bias (Formal)}
+\textbf{For those interested in the formal structure:}
+
+
+Standard discounting: $U_t = u_t + \delta u_{t+1} + \delta^2 u_{t+2} + \cdots$
+
+
+Present-bias model (Laibson 1997; O'Donoghue \& Rabin 1999):
+\[
+U_t = u_t + \beta \delta u_{t+1} + \beta \delta^2 u_{t+2} + \cdots \quad \beta \leq 1
+\]
+
+\begin{itemize}
+\item $\delta$: how much you discount one period into the future (same as always)
+\item $\beta$: an \emph{extra} penalty applied to everything that is not the present moment
+\item $\beta = 1$: standard model; $\beta < 1$: the present is over-weighted
+\end{itemize}
+
+
+\textbf{Investment good} ($b_1 < 0$, $b_2 > 0$): the present-biased agent feels the cost more acutely, so does less exercise, less saving, less studying than she planned.
+
+\textbf{Leisure good} ($b_1 > 0$, $b_2 < 0$): she over-consumes relative to her own long-run preferences.
+
+
+\alert{Estimated values:} Laibson et al.\ (2006): $\beta \approx 0.70$, $\delta \approx 0.96$ from life-cycle savings data.
+\end{frame}
+
+
+\begin{frame}{Behavioural Economics: A Brief Intellectual History}
+\begin{itemize}
+\item \textbf{1955} - Herbert Simon proposes "bounded rationality"; agents use heuristics
+\item \textbf{1974} - Tversky \& Kahneman: "Judgment under Uncertainty: Heuristics and Biases" (\emph{Science})
+\item \textbf{1979} - Kahneman \& Tversky: Prospect Theory (\emph{Econometrica}) - the most cited paper in economics since 1970
+\item \textbf{1981} - Thaler documents dynamic inconsistency in intertemporal choice
+\item \textbf{1997} - Laibson formalises the $(\beta, \delta)$ model
+\item \textbf{2001} - Madrian \& Shea: default effects in 401(k)s
+\item \textbf{2002} - Kahneman awarded the Nobel Prize in Economics
+\item \textbf{2003} - Thaler \& Sunstein: "Libertarian Paternalism"
+\item \textbf{2008} - \emph{Nudge} published; UK establishes Behavioural Insights Team (2010)
+\item \textbf{2017} - Thaler awarded the Nobel Prize in Economics
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Are Firms Smarter Than Consumers?}
+\textbf{Armstrong \& Huck (2010) identify reasons firms might be less biased:}
+
+\begin{itemize}
+\item Economies of scale in decision-making: firms face the same decision repeatedly
+\item Market selection: consistently bad decision-making firms exit
+\item Access to consultants and data; internal checks and governance
+\end{itemize}
+
+
+\textbf{But firms also exhibit systematic biases:}
+\begin{itemize}
+\item Overconfident CEOs overpay for mergers (Malmendier \& Tate)
+\item Agency problems: managers maximise their own status, not shareholder value
+\item Complex environments generate rules of thumb that may calcify
+\item "Crazy" strategic behaviour can be rational individually but wasteful socially
+\end{itemize}
+
+
+\alert{Exit is not instantaneous:} firms often decline for long periods before failure, so selection is slow and imperfect.
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{The Equity Premium Puzzle}
+\textbf{A famous puzzle in finance that behavioural economics helps resolve:}
+
+\begin{itemize}
+\item US equity returns outperformed bonds by $\approx$ 3.9 percentage points per year (1871--1993)
+\item Under the standard model, this requires implausibly high risk aversion (Mehra \& Prescott, 1985)
+\end{itemize}
+
+
+\textbf{Benartzi \& Thaler (1995) - Myopic Loss Aversion:}
+\begin{itemize}
+\item If investors evaluate portfolio performance \emph{annually}, the probability of stocks underperforming bonds in any given year is substantial
+\item Loss-averse investors (with $\lambda \approx 2.25$) require a substantial equity premium to tolerate this risk
+\item Calibration matches the observed premium without requiring extreme risk aversion
+\end{itemize}
+
+
+\alert{Key insight:} the combination of loss aversion and short evaluation horizons ("myopic loss aversion") can explain what standard models cannot.
+\end{frame}
+
+
+\begin{frame}{Experience, Markets, and the Limits of Debiasing}
+\textbf{A common objection:} "Won't markets and experience correct these biases?"
+
+
+\textbf{DellaVigna's four responses:}
+
+\begin{enumerate}
+\item Many important decisions are \emph{infrequent} with noisy feedback (house purchase, pension choice) - learning cannot occur
+\item Experience can \emph{reinforce} some biases (professional investors show \emph{more} myopic loss aversion than students: Haigh \& List, 2004)
+\item Firms typically have \emph{no incentive to debias} consumers when bias is profitable (Gabaix \& Laibson, 2006)
+\item Some preferences (social preferences, loss aversion) are not "errors" to be corrected by experience - they are deep features of preferences
+\end{enumerate}
+
+
+\alert{Bottom line:} market competition is necessary but not sufficient for debiasing. The cases where it works well (experienced traders, commodity markets) are precisely where S\&D performs well already.
+\end{frame}
+
+
+\end{document}
